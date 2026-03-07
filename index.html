@@ -12,7 +12,6 @@ img{max-width:100%}
 a{text-decoration:none}
 button{cursor:pointer;border:none;background:none;font-family:inherit}
 
-/* Hero */
 .hero{position:relative;height:480px;overflow:hidden}
 @media(min-width:768px){.hero{height:560px}}
 .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -22,37 +21,30 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .hero-label{color:rgba(255,255,255,0.6);font-size:0.875rem;letter-spacing:0.3em;text-transform:uppercase;margin-bottom:0.75rem}
 .hero-title{color:#fff;font-family:Georgia,serif;font-size:clamp(2.2rem,6vw,4.5rem);font-weight:700;line-height:1;margin-bottom:1rem;text-shadow:0 2px 20px rgba(0,0,0,0.3)}
 .hero-desc{color:rgba(255,255,255,0.8);font-size:1rem;max-width:42rem;line-height:1.6;margin-bottom:1.5rem}
-@media(min-width:768px){.hero-desc{font-size:1.125rem}}
 .hero-stats{display:flex;flex-wrap:wrap;gap:1.5rem}
 .hero-stat-num{font-family:Georgia,serif;font-size:1.5rem;font-weight:700;color:#fff}
 .hero-stat-label{font-size:0.75rem;color:rgba(255,255,255,0.6);letter-spacing:0.1em}
 
-/* Nav */
 .nav{position:sticky;top:0;z-index:40;border-bottom:1px solid #e7e5e4;box-shadow:0 1px 4px rgba(0,0,0,0.06);background:rgba(250,250,247,0.96);backdrop-filter:blur(12px)}
 .nav-inner{max-width:1280px;margin:0 auto;padding:0.5rem 1rem}
-@media(min-width:768px){.nav-inner{padding:0.5rem 2rem}}
 .search-wrap{position:relative;margin-bottom:0.5rem}
 .search-icon{position:absolute;left:0.75rem;top:50%;transform:translateY(-50%);color:#a8a29e;font-size:0.875rem}
 .search-input{width:100%;padding:0.375rem 0.75rem 0.375rem 2rem;font-size:0.875rem;background:#f5f5f0;border:1px solid #e7e5e4;border-radius:0.5rem;outline:none;font-family:inherit}
 .search-input:focus{border-color:#fbbf24;box-shadow:0 0 0 2px rgba(251,191,36,0.2)}
 .city-tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:0.375rem}
 @media(min-width:768px){.city-tabs{display:flex;flex-wrap:wrap}}
-.city-tab{padding:0.375rem 0.5rem;border-radius:0.5rem;font-size:0.75rem;font-weight:500;transition:all 0.2s;text-align:center;background:#f5f5f0;color:#57534e}
+.city-tab{padding:0.375rem 0.5rem;border-radius:0.5rem;font-size:0.75rem;font-weight:500;transition:all 0.2s;text-align:center;background:#f5f5f0;color:#57534e;cursor:pointer}
 .city-tab:hover{background:#e7e5e4}
-.city-tab.active{color:#fff}
-@media(min-width:768px){.city-tab{padding:0.375rem 0.75rem}}
 
-/* Main */
 .main{max-width:1280px;margin:0 auto;padding:2.5rem 1rem}
 @media(min-width:768px){.main{padding:2.5rem 2rem}}
 
-/* WX Banner */
 .wx-banner{margin-bottom:1.5rem;border-radius:0.75rem;background:linear-gradient(135deg,#1C1A16 0%,#3A2E1E 60%,#5C3D1E 100%);padding:1rem 1.25rem}
 .wx-banner-inner{display:flex;flex-direction:column;gap:0.75rem}
 @media(min-width:640px){.wx-banner-inner{flex-direction:row;align-items:center;justify-content:space-between}}
 .wx-banner-left{display:flex;align-items:center;gap:0.75rem}
 .wx-icon-box{padding:0.5rem;border-radius:0.5rem;background:rgba(255,255,255,0.12);flex-shrink:0}
-.wx-title{color:#fff;font-size:1rem;font-weight:600;font-family:Georgia,serif}
+.wx-title{color:#fff;font-size:1rem;font-weight:600}
 .wx-sub{color:rgba(255,255,255,0.6);font-size:0.75rem;margin-top:0.25rem}
 .wx-btn{flex-shrink:0;display:flex;align-items:center;gap:0.5rem;padding:0.5rem 1rem;border-radius:0.5rem;background:rgba(245,240,232,0.15);color:#F5F0E8;border:1px solid rgba(245,240,232,0.25);font-size:0.875rem;font-weight:600;cursor:pointer;position:relative}
 .wx-btn-label{color:#fcd34d;font-weight:700}
@@ -63,20 +55,17 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .qr-card p{font-size:0.75rem;color:#78716c;text-align:center;line-height:1.5}
 .qr-card strong{color:#292524}
 
-/* Tips banner */
 .tips-banner{margin-bottom:2.5rem;border-radius:0.75rem;padding:1.25rem;border:1px solid #fde68a;background:rgba(254,243,199,0.6)}
 .tips-banner-header{display:flex;align-items:flex-start;gap:0.75rem}
 .tips-icon{padding:0.5rem;border-radius:0.5rem;background:#fef3c7;flex-shrink:0}
-.tips-title{font-family:Georgia,serif;font-size:1.1rem;font-weight:600;color:#1c1a16;margin-bottom:0.5rem}
+.tips-title{font-size:1.1rem;font-weight:600;color:#1c1a16;margin-bottom:0.5rem}
 .tips-grid{display:grid;gap:0.75rem;margin-top:0.5rem}
 @media(min-width:768px){.tips-grid{grid-template-columns:repeat(3,1fr)}}
 .tips-item{font-size:0.75rem;color:#57534e;line-height:1.6}
 .tips-item strong{color:#b45309}
 
-/* City section */
 .city-section{margin-bottom:4rem;scroll-margin-top:5rem}
 .city-header{position:relative;overflow:hidden;border-radius:0.75rem;margin-bottom:1.5rem;padding:1.5rem 2rem}
-.city-header-bg{position:absolute;inset:0;opacity:0.1}
 .city-header-content{position:relative;display:flex;align-items:flex-end;justify-content:space-between}
 .city-label{color:rgba(255,255,255,0.6);font-size:0.875rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:0.25rem}
 .city-name{color:#fff;font-family:Georgia,serif;font-size:3rem;font-weight:700;line-height:1}
@@ -84,17 +73,12 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .city-count{color:rgba(255,255,255,0.4);font-family:Georgia,serif;font-size:5rem;font-weight:700;line-height:1}
 .city-count-label{color:rgba(255,255,255,0.6);font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase}
 
-
-
-/* Tags */
 .tag{display:inline-block;padding:0.125rem 0.5rem;border-radius:0.25rem;font-size:0.75rem;font-weight:500}
 .tag-free{background:#dcfce7;color:#166534;border:1px solid #bbf7d0}
 .tag-reserve{background:#dbeafe;color:#1e40af;border:1px solid #bfdbfe}
 .tag-warning{background:#ffedd5;color:#9a3412;border:1px solid #fed7aa}
-.tag-closed{background:#fee2e2;color:#991b1b;border:1px solid #fecaca}
 .tag-info{background:#f1f5f9;color:#475569;border:1px solid #e2e8f0}
 
-/* Mobile cards */
 .mobile-cards{display:flex;flex-direction:column;gap:0.75rem}
 @media(min-width:768px){.mobile-cards{display:none}}
 .card{border-radius:0.75rem;border:1px solid #e7e5e4;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.04);background:#fff}
@@ -108,8 +92,6 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .card-cell:nth-child(even){border-right:none}
 .card-cell-label{font-size:0.625rem;font-weight:600;color:#a8a29e;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
 .card-cell-value{font-size:0.75rem;color:#44403c;line-height:1.5;white-space:pre-line}
-.card-cell-value.free{color:#15803d;font-weight:500}
-.card-cell-value.closed{color:#dc2626}
 .card-toggle{width:100%;padding:0.625rem;font-size:0.75rem;color:#78716c;display:flex;align-items:center;justify-content:center;gap:0.375rem;border-top:1px solid #e7e5e4}
 .card-toggle:hover{background:#f9f9f7}
 .card-notes{padding:1rem;background:rgba(254,243,199,0.4);border-top:1px solid #fef3c7;display:none}
@@ -118,7 +100,6 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .card-notes li{display:flex;align-items:flex-start;gap:0.5rem;font-size:0.75rem;color:#57534e;line-height:1.6;margin-bottom:0.375rem}
 .card-notes-addr{font-size:0.75rem;color:#a8a29e;font-style:italic;margin-top:0.5rem}
 
-/* Desktop table */
 .desktop-table{display:none}
 @media(min-width:768px){.desktop-table{display:block;border-radius:0.75rem;border:1px solid #e7e5e4;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.06)}}
 .table-scroll{overflow-x:auto}
@@ -134,42 +115,39 @@ td{padding:0.875rem 1rem;vertical-align:top}
 .td-name-en{font-size:0.75rem;color:#a8a29e;font-style:italic;margin-top:0.125rem}
 .td-tags{display:flex;flex-wrap:wrap;gap:0.25rem;margin-top:0.375rem}
 .td-book-btn{display:inline-flex;align-items:center;gap:0.25rem;padding:0.25rem 0.625rem;border-radius:0.375rem;font-size:0.75rem;font-weight:500;background:#1C1A16;color:#F5F0E8;margin-top:0.5rem}
-.td-value{font-size:0.75rem;color:#44403c;line-height:1.6;white-space:pre-line;font-family:monospace}
+.td-value{font-size:0.75rem;color:#44403c;line-height:1.6;white-space:pre-line}
 .td-free{font-size:0.75rem;color:#15803d;font-weight:500;white-space:pre-line}
-.td-free-none{font-size:0.75rem;color:#a8a29e;white-space:pre-line}
+.td-free-none{font-size:0.75rem;color:#a8a29e}
 .td-closed{font-size:0.75rem;color:#dc2626;white-space:pre-line}
 .td-expand{text-align:center;color:#d6d3d1;font-size:0.75rem}
 .tr-notes{display:none}
 .tr-notes.open{display:table-row}
 .tr-notes td{padding:0.75rem 1rem 1rem}
-.notes-box{background:#fff;border-radius:0.5rem;border:1px solid #fef3c7;padding:0.875rem;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+.notes-box{background:#fff;border-radius:0.5rem;border:1px solid #fef3c7;padding:0.875rem}
 .notes-header{display:flex;align-items:center;gap:0.375rem;margin-bottom:0.625rem;font-size:0.75rem;font-weight:600;color:#57534e;text-transform:uppercase;letter-spacing:0.05em}
 .notes-list{list-style:none}
 .notes-list li{display:flex;align-items:flex-start;gap:0.5rem;font-size:0.75rem;color:#57534e;line-height:1.6;margin-bottom:0.375rem}
 .notes-addr{margin-top:0.625rem;font-size:0.75rem;color:#a8a29e;font-style:italic}
-.table-footer{padding:0.5rem 1rem;background:#f9f9f7;border-top:1px solid #e7e5e4;font-size:0.75rem;color:#a8a29e;display:flex;align-items:center;gap:0.25rem}
+.table-footer{padding:0.5rem 1rem;background:#f9f9f7;border-top:1px solid #e7e5e4;font-size:0.75rem;color:#a8a29e}
 
-/* Travel tips */
 .tips-section{margin-top:2rem;margin-bottom:4rem}
 .tips-section-title{font-family:Georgia,serif;font-size:2rem;font-weight:700;color:#1c1a16;margin-bottom:1.5rem}
 .tips-row{display:grid;gap:1.5rem;margin-bottom:1.5rem}
 @media(min-width:768px){.tips-row{grid-template-columns:1fr 1fr}}
 .tips-card{background:#fff;border-radius:0.75rem;border:1px solid #e7e5e4;padding:1.5rem;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
-.tips-card-title{font-family:Georgia,serif;font-size:1.2rem;font-weight:600;color:#1c1a16;display:flex;align-items:center;gap:0.5rem;margin-bottom:1rem}
-.tips-card-body{font-size:0.75rem;color:#57534e}
+.tips-card-title{font-family:Georgia,serif;font-size:1.1rem;font-weight:600;color:#1c1a16;display:flex;align-items:center;gap:0.5rem;margin-bottom:1rem}
 .holiday-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.375rem}
 .holiday-item{display:flex;align-items:center;gap:0.5rem}
 .holiday-dot{width:0.375rem;height:0.375rem;border-radius:50%;background:#f87171;flex-shrink:0}
-.holiday-date{color:#78716c;font-family:monospace;font-size:0.75rem}
-.holiday-name{color:#44403c;font-size:0.75rem}
+.holiday-date{color:#78716c;font-size:0.7rem}
+.holiday-name{color:#44403c;font-size:0.7rem}
 .booking-tip{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #f5f5f4;padding-bottom:0.5rem;margin-bottom:0.5rem}
 .booking-tip:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
 .booking-tip-name{font-size:0.75rem;font-weight:500;color:#44403c}
-.booking-tip-val{font-size:0.75rem;color:#2563eb;background:#eff6ff;padding:0.125rem 0.5rem;border-radius:0.25rem;font-family:monospace}
-.free-sunday-card{background:#f0fdf4;border-color:#bbf7d0}
-.free-sunday-card .tips-card-title{color:#15803d}
-.dress-card{background:#fffbeb;border-color:#fde68a}
-.dress-card .tips-card-title{color:#92400e}
+.booking-tip-val{font-size:0.75rem;color:#2563eb;background:#eff6ff;padding:0.125rem 0.5rem;border-radius:0.25rem}
+.pass-item{border-bottom:1px solid #f5f5f4;padding-bottom:0.5rem;margin-bottom:0.5rem;font-size:0.75rem;color:#57534e;line-height:1.6}
+.pass-item:last-child{border-bottom:none}
+.pass-item strong{color:#1c1a16;display:block;margin-bottom:0.125rem}
 .season-item{padding:0.625rem;border-radius:0.5rem;margin-bottom:0.5rem;font-size:0.75rem;line-height:1.6}
 .season-best{background:#f0fdf4;border:1px solid #bbf7d0}
 .season-peak{background:#fffbeb;border:1px solid #fde68a}
@@ -184,50 +162,27 @@ td{padding:0.875rem 1rem;vertical-align:top}
 .priority-amber .priority-num{color:#d97706}
 .priority-red{background:#fef2f2;border:1px solid #fecaca}
 .priority-red .priority-num{color:#dc2626}
-.pass-item{border-bottom:1px solid #f5f5f4;padding-bottom:0.5rem;margin-bottom:0.5rem;font-size:0.75rem;color:#57534e;line-height:1.6}
-.pass-item:last-child{border-bottom:none}
-.pass-item strong{color:#1c1a16;display:block;margin-bottom:0.125rem}
-.currency-item{display:flex;align-items:flex-start;gap:0.5rem;font-size:0.75rem;color:#57534e;line-height:1.6;margin-bottom:0.5rem}
-.currency-dot{color:#94a3b8;flex-shrink:0;margin-top:0.25rem}
 
-/* Footer */
 footer{border-top:1px solid #e7e5e4;background:#1c1a16;color:#a8a29e;padding:2.5rem 1.5rem}
 .footer-inner{max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:1rem}
 @media(min-width:768px){.footer-inner{flex-direction:row;align-items:center;justify-content:space-between}}
 .footer-title{color:#fff;font-family:Georgia,serif;font-size:1.125rem;font-weight:700;margin-bottom:0.25rem}
 .footer-desc{font-size:0.75rem;color:#57534e;max-width:28rem}
-.footer-meta{font-size:0.75rem;color:#57534e;text-align:right}
+.footer-meta{font-size:0.75rem;color:#57534e}
 
-/* Scroll top */
-#scroll-top{position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:#1C1A16;color:#fff;display:none;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,0.3);font-size:1.25rem;z-index:50;transition:transform 0.2s;cursor:pointer}
+#scroll-top{position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:#1C1A16;color:#fff;display:none;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,0.3);font-size:1.25rem;z-index:50;cursor:pointer}
 #scroll-top.show{display:flex}
-#scroll-top:hover{transform:scale(1.1)}
-
-/* No results */
-.no-results{text-align:center;padding:5rem 1rem;color:#a8a29e}
-.no-results .icon{font-size:2.5rem;margin-bottom:1rem;opacity:0.4}
-.no-results p{font-size:1.125rem}
-
-/* Emoji icons */
-.icon-ticket::before{content:"🎫"}
-.icon-clock::before{content:"🕐"}
-.icon-calendar-check::before{content:"📅"}
-.icon-calendar-x::before{content:"🚫"}
-.icon-warn::before{content:"⚠️"}
-.icon-map::before{content:"📍"}
-.icon-info::before{content:"ℹ️"}
 </style>
 </head>
 <body>
 
-<!-- Hero -->
 <div class="hero">
-  <img src="images/hero.webp" alt="意大利风景" loading="eager">
+  <img src="images/hero.webp" alt="意大利风景" loading="eager" onerror="this.style.display='none'">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-label">Travel Guide · 2026</div>
     <h1 class="hero-title">意大利热门景点<br>完整攻略</h1>
-    <p class="hero-desc">涵盖罗马、佛罗伦萨、威尼斯、米兰、那不勒斯、比萨、五渔村等城市；门票价格、开放时间、免费日、闭馆日及注意事项一览无余。</p>
+    <p class="hero-desc">涵盖罗马、佛罗伦萨、威尼斯、米兰、那不勒斯、比萨、五渔村；门票价格、开放时间、免费日、闭馆日及注意事项一览无余。</p>
     <div class="hero-stats">
       <div><div class="hero-stat-num">7</div><div class="hero-stat-label">座城市</div></div>
       <div><div class="hero-stat-num">25</div><div class="hero-stat-label">处景点</div></div>
@@ -236,29 +191,26 @@ footer{border-top:1px solid #e7e5e4;background:#1c1a16;color:#a8a29e;padding:2.5
   </div>
 </div>
 
-<!-- Sticky Nav -->
 <div class="nav">
   <div class="nav-inner">
     <div class="search-wrap">
       <span class="search-icon">🔍</span>
       <input class="search-input" type="text" id="search" placeholder="搜索景点..." oninput="filterAttractions(this.value)">
     </div>
-    <div class="city-tabs" id="city-tabs">
-      <button class="city-tab" data-city="rome" style="--c:#C4622D" onclick="scrollToCity('rome')">罗马</button>
-      <button class="city-tab" data-city="florence" style="--c:#8B6914" onclick="scrollToCity('florence')">佛罗伦萨</button>
-      <button class="city-tab" data-city="venice" style="--c:#1B4B8A" onclick="scrollToCity('venice')">威尼斯</button>
-      <button class="city-tab" data-city="milan" style="--c:#3A3A4A" onclick="scrollToCity('milan')">米兰</button>
-      <button class="city-tab" data-city="naples" style="--c:#C45A1A" onclick="scrollToCity('naples')">那不勒斯</button>
-      <button class="city-tab" data-city="pisa" style="--c:#2A6B4A" onclick="scrollToCity('pisa')">比萨</button>
-      <button class="city-tab" data-city="cinque-terre" style="--c:#1A6B8A" onclick="scrollToCity('cinque-terre')">五渔村</button>
+    <div class="city-tabs">
+      <button class="city-tab" data-city="rome" onclick="scrollToCity('rome')">罗马</button>
+      <button class="city-tab" data-city="florence" onclick="scrollToCity('florence')">佛罗伦萨</button>
+      <button class="city-tab" data-city="venice" onclick="scrollToCity('venice')">威尼斯</button>
+      <button class="city-tab" data-city="milan" onclick="scrollToCity('milan')">米兰</button>
+      <button class="city-tab" data-city="naples" onclick="scrollToCity('naples')">那不勒斯</button>
+      <button class="city-tab" data-city="pisa" onclick="scrollToCity('pisa')">比萨</button>
+      <button class="city-tab" data-city="cinque-terre" onclick="scrollToCity('cinque-terre')">五渔村</button>
     </div>
   </div>
 </div>
 
-<!-- Main Content -->
 <main class="main">
 
-  <!-- WX Banner -->
   <div class="wx-banner">
     <div class="wx-banner-inner">
       <div class="wx-banner-left">
@@ -272,7 +224,7 @@ footer{border-top:1px solid #e7e5e4;background:#1c1a16;color:#a8a29e;padding:2.5
         📖 <span>公众号：</span><span class="wx-btn-label">Triss 攻略集</span>
         <div class="qr-popover" id="qr-popover">
           <div class="qr-card">
-            <img src="images/qrcode.jpg" alt="Triss 攻略集 公众号二维码">
+            <img src="images/qrcode.jpg" alt="公众号二维码">
             <p>扫码关注<br><strong>Triss 攻略集</strong></p>
           </div>
         </div>
@@ -280,7 +232,6 @@ footer{border-top:1px solid #e7e5e4;background:#1c1a16;color:#a8a29e;padding:2.5
     </div>
   </div>
 
-  <!-- Tips Banner -->
   <div class="tips-banner">
     <div class="tips-banner-header">
       <div class="tips-icon">ℹ️</div>
@@ -295,581 +246,210 @@ footer{border-top:1px solid #e7e5e4;background:#1c1a16;color:#a8a29e;padding:2.5
     </div>
   </div>
 
-  <!-- City Sections -->
-  <div id="cities-container">
-
   <!-- ===== ROME ===== -->
   <section class="city-section" id="city-rome">
     <div class="city-header" style="background:#C4622D">
-      <div class="city-header-bg" style="background:radial-gradient(circle at 20% 50%,white 0%,transparent 60%),radial-gradient(circle at 80% 20%,white 0%,transparent 50%)"></div>
       <div class="city-header-content">
         <div>
           <div class="city-label">Italy · Roma</div>
           <h2 class="city-name">罗马</h2>
           <p class="city-desc">永恒之城，古罗马帝国的心脏，拥有世界上最密集的历史遗迹</p>
         </div>
-        <div class="hidden-sm" style="text-align:right">
-          <div class="city-count">7</div>
-          <div class="city-count-label">景点</div>
-        </div>
+        <div style="text-align:right;display:none" class="d-md-block"><div class="city-count">7</div><div class="city-count-label">景点</div></div>
       </div>
     </div>
-
-    <!-- Mobile Cards -->
     <div class="mobile-cards">
-      <!-- 斗兽场 -->
-      <div class="card">
-        <div class="card-header" style="background:#FDF0EA;border-bottom:2px solid rgba(160,80,31,0.12)">
-          <div class="card-name">斗兽场</div>
-          <div class="card-name-en">Colosseum</div>
-          <div class="card-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-info">联票</span></div>
-          <a href="https://ticketing.colosseo.it/en/" target="_blank" class="card-book-btn">↗ 官方订票</a>
-        </div>
-        <div class="card-grid">
-          <div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">标准票：€18（含古罗马广场+帕拉蒂尼山）
-全体验票：€24（含地下室+竞技场地板）</div></div>
-          <div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">夏季（3月末—10月末）：8:30—19:15
-冬季（10月末—2月末）：8:30—16:30</div></div>
-          <div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">每月第一个周日
-4月25日、6月2日、11月4日</div></div>
-          <div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">12月25日、1月1日</div></div>
-        </div>
-        <button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button>
-        <div class="card-notes">
-          <ul>
-            <li><span style="color:#f59e0b">•</span><span>强烈建议提前在官网预约，旺季门票经常售罄</span></li>
-            <li><span style="color:#f59e0b">•</span><span>免费日现场排队时间极长（可达3—4小时），且不开放地下室和竞技场地板</span></li>
-            <li><span style="color:#f59e0b">•</span><span>不同票型入口不同，需提前确认所在入口</span></li>
-            <li><span style="color:#f59e0b">•</span><span>禁止携带大型行李箱，安检严格</span></li>
-            <li><span style="color:#f59e0b">•</span><span>建议早上8:30开门即入场，或下午17:00后入场以避开人流高峰</span></li>
-          </ul>
-          <div class="card-notes-addr">地址：Piazza del Colosseo, 1, 00184 Roma</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-header" style="background:#FDF0EA;border-bottom:2px solid rgba(160,80,31,0.12)"><div class="card-name">斗兽场</div><div class="card-name-en">Colosseum</div><div class="card-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-info">联票</span></div><a href="https://ticketing.colosseo.it/en/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">标准票：€18（含古罗马广场+帕拉蒂尼山）
+全体验票：€24（含地下室+竞技场地板）</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">夏季：8:30—19:15
+冬季：8:30—16:30</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">每月第一个周日
+4月25日、6月2日、11月4日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">12月25日、1月1日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>强烈建议提前在官网预约，旺季门票经常售罄</span></li><li><span style="color:#f59e0b">•</span><span>免费日现场排队时间极长（可达3—4小时）</span></li><li><span style="color:#f59e0b">•</span><span>建议早上8:30开门即入场，或下午17:00后入场</span></li></ul><div class="card-notes-addr">地址：Piazza del Colosseo, 1, 00184 Roma</div></div></div>
 
-      <!-- 梵蒂冈 -->
-      <div class="card">
-        <div class="card-header" style="background:#FDF0EA;border-bottom:2px solid rgba(160,80,31,0.12)">
-          <div class="card-name">梵蒂冈博物馆与西斯廷教堂</div>
-          <div class="card-name-en">Vatican Museums &amp; Sistine Chapel</div>
-          <div class="card-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-warning">着装要求</span><span class="tag tag-warning">禁止拍照</span></div>
-          <a href="https://tickets.museivaticani.va" target="_blank" class="card-book-btn">↗ 官方订票</a>
-        </div>
-        <div class="card-grid">
-          <div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人：€20（现场）/ €25（预约）
-儿童7—18岁：€8 / €13
-7岁以下：免费</div></div>
-          <div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周一至周六
-8:00—20:00
-（最晚入场18:00）</div></div>
-          <div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">每月最后一个周日
-9:00—14:00</div></div>
-          <div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">周日（除每月最后一个周日）
-1月1日、6月29日、8月15日
-12月25日、12月26日等</div></div>
-        </div>
-        <button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button>
-        <div class="card-notes">
-          <ul>
-            <li><span style="color:#f59e0b">•</span><span>强烈建议提前在官网预约，避免排队数小时</span></li>
-            <li><span style="color:#f59e0b">•</span><span>进入西斯廷教堂须着装得体：禁止短裤、无袖上衣、露肩装</span></li>
-            <li><span style="color:#f59e0b">•</span><span>西斯廷教堂内禁止拍照，工作人员会提醒</span></li>
-            <li><span style="color:#f59e0b">•</span><span>参观时间建议3—4小时</span></li>
-            <li><span style="color:#f59e0b">•</span><span>唯一官方购票网站：tickets.museivaticani.va，谨防第三方高价票</span></li>
-          </ul>
-          <div class="card-notes-addr">地址：Vatican City</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-header" style="background:#FDF0EA;border-bottom:2px solid rgba(160,80,31,0.12)"><div class="card-name">梵蒂冈博物馆与西斯廷教堂</div><div class="card-name-en">Vatican Museums &amp; Sistine Chapel</div><div class="card-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-warning">着装要求</span></div><a href="https://tickets.museivaticani.va" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人：€20（现场）/ €25（预约）
+7岁以下：免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周一至周六
+8:00—20:00</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">每月最后一个周日
+9:00—14:00</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">周日（除每月最后一个周日）
+12月25日等</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>强烈建议提前预约，避免排队数小时</span></li><li><span style="color:#f59e0b">•</span><span>进入西斯廷教堂须着装得体，禁止短裤、无袖</span></li><li><span style="color:#f59e0b">•</span><span>西斯廷教堂内禁止拍照</span></li></ul><div class="card-notes-addr">地址：Vatican City</div></div></div>
 
-      <!-- 万神殿 -->
-      <div class="card">
-        <div class="card-header" style="background:#FDF0EA;border-bottom:2px solid rgba(160,80,31,0.12)">
-          <div class="card-name">万神殿</div>
-          <div class="card-name-en">Pantheon</div>
-          <div class="card-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-warning">着装要求</span></div>
-          <a href="https://www.museiitaliani.it/" target="_blank" class="card-book-btn">↗ 官方订票</a>
-        </div>
-        <div class="card-grid">
-          <div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">基础票：€5
-含语音导览：€15
-含导游讲解：€25.5</div></div>
-          <div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周一至周六 9:00—19:00
-周日 9:00—18:00
-节假日 9:00—13:00</div></div>
-          <div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#a8a29e">无常规免费日
-（2023年起收费）</div></div>
-          <div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">1月1日、12月25日</div></div>
-        </div>
-        <button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button>
-        <div class="card-notes">
-          <ul>
-            <li><span style="color:#f59e0b">•</span><span>2023年起正式收费，需提前预约</span></li>
-            <li><span style="color:#f59e0b">•</span><span>进入须着装得体，禁止穿着暴露</span></li>
-            <li><span style="color:#f59e0b">•</span><span>内部禁止大声喧哗，保持安静</span></li>
-            <li><span style="color:#f59e0b">•</span><span>建议避开中午时段（11:00—14:00），人流量最大</span></li>
-            <li><span style="color:#f59e0b">•</span><span>穹顶中央圆孔（直径9米）是唯一采光来源，雨天可见雨水落入</span></li>
-          </ul>
-          <div class="card-notes-addr">地址：Piazza della Rotonda, 00186 Roma</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-header" style="background:#FDF0EA;border-bottom:2px solid rgba(160,80,31,0.12)"><div class="card-name">万神殿</div><div class="card-name-en">Pantheon</div><div class="card-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-warning">着装要求</span></div><a href="https://www.museiitaliani.it/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">基础票：€5
+含语音导览：€15</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周一至周六 9:00—19:00
+周日 9:00—18:00</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#a8a29e">无常规免费日（2023年起收费）</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">1月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>2023年起正式收费，需提前预约</span></li><li><span style="color:#f59e0b">•</span><span>进入须着装得体，禁止穿着暴露</span></li><li><span style="color:#f59e0b">•</span><span>穹顶中央圆孔是唯一采光来源，雨天可见雨水落入</span></li></ul><div class="card-notes-addr">地址：Piazza della Rotonda, 00186 Roma</div></div></div>
 
-      <!-- 古罗马广场 -->
-      <div class="card">
-        <div class="card-header" style="background:#FDF0EA;border-bottom:2px solid rgba(160,80,31,0.12)">
-          <div class="card-name">古罗马广场与帕拉蒂尼山</div>
-          <div class="card-name-en">Roman Forum &amp; Palatine Hill</div>
-          <div class="card-tags"><span class="tag tag-info">联票</span></div>
-          <a href="https://ticketing.colosseo.it/en/" target="_blank" class="card-book-btn">↗ 官方订票</a>
-        </div>
-        <div class="card-grid">
-          <div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">联票€18
-（与斗兽场共用，无单独票）</div></div>
-          <div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">与斗兽场相同
-（9:00开始）</div></div>
-          <div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">与斗兽场相同
-（每月第一个周日等）</div></div>
-          <div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">12月25日、1月1日</div></div>
-        </div>
-        <button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button>
-        <div class="card-notes">
-          <ul>
-            <li><span style="color:#f59e0b">•</span><span>购买斗兽场门票即可进入，同一张票，无需额外购买</span></li>
-            <li><span style="color:#f59e0b">•</span><span>地面不平，建议穿舒适的运动鞋，避免高跟鞋</span></li>
-            <li><span style="color:#f59e0b">•</span><span>夏季烈日暴晒，建议带水和防晒霜</span></li>
-            <li><span style="color:#f59e0b">•</span><span>帕拉蒂尼山可俯瞰整个古罗马广场全景</span></li>
-          </ul>
-          <div class="card-notes-addr">地址：Via della Salara Vecchia, 5/6, 00186 Roma</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-header" style="background:#FDF0EA;border-bottom:2px solid rgba(160,80,31,0.12)"><div class="card-name">古罗马广场与帕拉蒂尼山</div><div class="card-name-en">Roman Forum &amp; Palatine Hill</div><div class="card-tags"><span class="tag tag-info">联票</span></div></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">联票€18（与斗兽场共用）</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">与斗兽场相同</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">与斗兽场相同</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">12月25日、1月1日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>购买斗兽场门票即可进入，无需额外购买</span></li><li><span style="color:#f59e0b">•</span><span>地面不平，建议穿舒适运动鞋</span></li></ul><div class="card-notes-addr">地址：Via della Salara Vecchia, 5/6, 00186 Roma</div></div></div>
 
-      <!-- 圣天使堡 -->
-      <div class="card">
-        <div class="card-header" style="background:#FDF0EA;border-bottom:2px solid rgba(160,80,31,0.12)">
-          <div class="card-name">圣天使堡</div>
-          <div class="card-name-en">Castel Sant'Angelo</div>
-          <div class="card-tags"><span class="tag tag-reserve">推荐预约</span></div>
-          <a href="https://www.coopculture.it/en/tickets/" target="_blank" class="card-book-btn">↗ 官方订票</a>
-        </div>
-        <div class="card-grid">
-          <div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人：€13
-欧盟18—25岁：€2
-18岁以下：免费</div></div>
-          <div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周二至周日
-9:00—19:30</div></div>
-          <div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">每月第一个周日</div></div>
-          <div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">每周一
-1月1日、12月25日</div></div>
-        </div>
-        <button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button>
-        <div class="card-notes">
-          <ul>
-            <li><span style="color:#f59e0b">•</span><span>建议提前网上预约，节省排队时间</span></li>
-            <li><span style="color:#f59e0b">•</span><span>顶层露台可俯瞰罗马全景，是拍照绝佳地点</span></li>
-            <li><span style="color:#f59e0b">•</span><span>内部有多层展览，参观时间约1.5—2小时</span></li>
-            <li><span style="color:#f59e0b">•</span><span>与梵蒂冈博物馆步行约10分钟，可安排同日参观</span></li>
-          </ul>
-          <div class="card-notes-addr">地址：Lungotevere Castello, 50, 00193 Roma</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-header" style="background:#FDF0EA;border-bottom:2px solid rgba(160,80,31,0.12)"><div class="card-name">圣天使堡</div><div class="card-name-en">Castel Sant'Angelo</div><div class="card-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://www.coopculture.it/en/tickets/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人：€13
+18岁以下：免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周二至周日
+9:00—19:30</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">每月第一个周日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">每周一；1月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>顶层露台可俯瞰罗马全景</span></li><li><span style="color:#f59e0b">•</span><span>与梵蒂冈步行约10分钟，可安排同日参观</span></li></ul><div class="card-notes-addr">地址：Lungotevere Castello, 50, 00193 Roma</div></div></div>
 
-      <!-- 特雷维喷泉 -->
-      <div class="card">
-        <div class="card-header" style="background:#FDF0EA;border-bottom:2px solid rgba(160,80,31,0.12)">
-          <div class="card-name">特雷维喷泉</div>
-          <div class="card-name-en">Trevi Fountain</div>
-          <div class="card-tags"><span class="tag tag-free">免费</span></div>
-        </div>
-        <div class="card-grid">
-          <div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">免费
-旺季围栏近景区：€2</div></div>
-          <div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">全天开放（24小时）</div></div>
-          <div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">全年免费</div></div>
-          <div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#a8a29e">无</div></div>
-        </div>
-        <button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button>
-        <div class="card-notes">
-          <ul>
-            <li><span style="color:#f59e0b">•</span><span>旺季（夏季）人流极大，建议清晨6:00—8:00或深夜前往</span></li>
-            <li><span style="color:#f59e0b">•</span><span>禁止坐在喷泉边缘，违者罚款高达€500</span></li>
-            <li><span style="color:#f59e0b">•</span><span>投币许愿时需背对喷泉，用右手从左肩投出</span></li>
-            <li><span style="color:#f59e0b">•</span><span>附近扒手较多，注意保管财物</span></li>
-          </ul>
-          <div class="card-notes-addr">地址：Piazza di Trevi, 00187 Roma</div>
-        </div>
-      </div>
+      <div class="card"><div class="card-header" style="background:#FDF0EA;border-bottom:2px solid rgba(160,80,31,0.12)"><div class="card-name">特雷维喷泉</div><div class="card-name-en">Trevi Fountain</div><div class="card-tags"><span class="tag tag-free">免费</span></div></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">免费（旺季近景区€2）</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">全天开放（24小时）</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">全年免费</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#a8a29e">无</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>旺季建议清晨6:00—8:00或深夜前往</span></li><li><span style="color:#f59e0b">•</span><span>禁止坐在喷泉边缘，违者罚款高达€500</span></li></ul><div class="card-notes-addr">地址：Piazza di Trevi, 00187 Roma</div></div></div>
 
-      <!-- 博尔盖塞 -->
-      <div class="card">
-        <div class="card-header" style="background:#FDF0EA;border-bottom:2px solid rgba(160,80,31,0.12)">
-          <div class="card-name">博尔盖塞美术馆</div>
-          <div class="card-name-en">Galleria Borghese</div>
-          <div class="card-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-info">限时参观</span></div>
-          <a href="https://borghese.gallery/tickets/" target="_blank" class="card-book-btn">↗ 官方订票</a>
-        </div>
-        <div class="card-grid">
-          <div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人：€18（含€2预约费）
-欧盟18—25岁：€4
-18岁以下：免费（仍需预约）</div></div>
-          <div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周二至周日
-每场2小时，5个时段
-09:00 / 11:00 / 13:00 / 15:00 / 17:00</div></div>
-          <div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">每月第一个周日
-（仍需预约，名额极少）</div></div>
-          <div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">每周一
-12月25日、1月1日</div></div>
-        </div>
-        <button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button>
-        <div class="card-notes">
-          <ul>
-            <li><span style="color:#f59e0b">•</span><span>旺季建议提前1—2个月预约，官网票通常提前数周售罄</span></li>
-            <li><span style="color:#f59e0b">•</span><span>每场参观严格限时2小时，到时须离场</span></li>
-            <li><span style="color:#f59e0b">•</span><span>禁止携带大型背包入内，需寄存于免费衣帽间</span></li>
-            <li><span style="color:#f59e0b">•</span><span>馆内收藏贝尼尼雕塑、卡拉瓦乔画作及拉斐尔作品</span></li>
-          </ul>
-          <div class="card-notes-addr">地址：Piazzale Scipione Borghese, 5, 00197 Roma</div>
-        </div>
-      </div>
-    </div><!-- /mobile-cards rome -->
-
-    <!-- Desktop Table Rome -->
-    <div class="desktop-table">
-      <div class="table-scroll">
-        <table>
-          <thead><tr>
-            <th>🎫 景点名称</th>
-            <th>🎫 门票价格</th>
-            <th>🕐 开放时间</th>
-            <th>📅 免费日</th>
-            <th>🚫 闭馆日</th>
-            <th>详情</th>
-          </tr></thead>
-          <tbody>
-            <tr onclick="toggleTableRow('rome-1-notes')">
-              <td><div class="td-name">斗兽场</div><div class="td-name-en">Colosseum</div><div class="td-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-info">联票</span></div><a href="https://ticketing.colosseo.it/en/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 官方订票</a></td>
-              <td><div class="td-value">标准票：€18（含古罗马广场+帕拉蒂尼山）
-全体验票：€24（含地下室+竞技场地板）</div></td>
-              <td><div class="td-value">夏季（3月末—10月末）：8:30—19:15
-冬季（10月末—2月末）：8:30—16:30</div></td>
-              <td><div class="td-free">每月第一个周日（仅标准区域）
-4月25日（解放日）
-6月2日（共和国日）
-11月4日（国家统一日）</div></td>
-              <td><div class="td-closed">12月25日、1月1日</div></td>
-              <td class="td-expand">▼</td>
-            </tr>
-            <tr class="tr-notes" id="rome-1-notes"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>强烈建议提前在官网预约，旺季门票经常售罄</span></li><li><span style="color:#f59e0b">•</span><span>免费日现场排队时间极长（可达3—4小时），且不开放地下室和竞技场地板</span></li><li><span style="color:#f59e0b">•</span><span>不同票型入口不同，需提前确认所在入口</span></li><li><span style="color:#f59e0b">•</span><span>禁止携带大型行李箱，安检严格</span></li><li><span style="color:#f59e0b">•</span><span>建议早上8:30开门即入场，或下午17:00后入场以避开人流高峰</span></li></ul><div class="notes-addr">地址：Piazza del Colosseo, 1, 00184 Roma</div></div></td></tr>
-
-            <tr onclick="toggleTableRow('rome-2-notes')">
-              <td><div class="td-name">梵蒂冈博物馆与西斯廷教堂</div><div class="td-name-en">Vatican Museums &amp; Sistine Chapel</div><div class="td-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-warning">着装要求</span></div><a href="https://tickets.museivaticani.va" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 官方订票</a></td>
-              <td><div class="td-value">成人：€20（现场）/ €25（预约）
-儿童7—18岁：€8 / €13
-7岁以下：免费</div></td>
-              <td><div class="td-value">周一至周六
-8:00—20:00（最晚入场18:00）</div></td>
-              <td><div class="td-free">每月最后一个周日
-9:00—14:00</div></td>
-              <td><div class="td-closed">周日（除每月最后一个周日）
-1月1日、6月29日、8月15日
-12月25日、12月26日等</div></td>
-              <td class="td-expand">▼</td>
-            </tr>
-            <tr class="tr-notes" id="rome-2-notes"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>强烈建议提前在官网预约，避免排队数小时</span></li><li><span style="color:#f59e0b">•</span><span>进入西斯廷教堂须着装得体：禁止短裤、无袖上衣、露肩装</span></li><li><span style="color:#f59e0b">•</span><span>西斯廷教堂内禁止拍照，工作人员会提醒</span></li><li><span style="color:#f59e0b">•</span><span>参观时间建议3—4小时</span></li><li><span style="color:#f59e0b">•</span><span>唯一官方购票网站：tickets.museivaticani.va，谨防第三方高价票</span></li></ul><div class="notes-addr">地址：Vatican City</div></div></td></tr>
-
-            <tr onclick="toggleTableRow('rome-3-notes')">
-              <td><div class="td-name">万神殿</div><div class="td-name-en">Pantheon</div><div class="td-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-warning">着装要求</span></div><a href="https://www.museiitaliani.it/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 官方订票</a></td>
-              <td><div class="td-value">基础票：€5
-含语音导览：€15
-含导游讲解：€25.5</div></td>
-              <td><div class="td-value">周一至周六 9:00—19:00
-周日 9:00—18:00
-节假日 9:00—13:00</div></td>
-              <td><div class="td-free-none">无常规免费日（2023年起收费）</div></td>
-              <td><div class="td-closed">1月1日、12月25日</div></td>
-              <td class="td-expand">▼</td>
-            </tr>
-            <tr class="tr-notes" id="rome-3-notes"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>2023年起正式收费，需提前预约</span></li><li><span style="color:#f59e0b">•</span><span>进入须着装得体，禁止穿着暴露</span></li><li><span style="color:#f59e0b">•</span><span>内部禁止大声喧哗，保持安静</span></li><li><span style="color:#f59e0b">•</span><span>建议避开中午时段（11:00—14:00），人流量最大</span></li><li><span style="color:#f59e0b">•</span><span>穹顶中央圆孔（直径9米）是唯一采光来源，雨天可见雨水落入</span></li></ul><div class="notes-addr">地址：Piazza della Rotonda, 00186 Roma</div></div></td></tr>
-
-            <tr onclick="toggleTableRow('rome-4-notes')">
-              <td><div class="td-name">古罗马广场与帕拉蒂尼山</div><div class="td-name-en">Roman Forum &amp; Palatine Hill</div><div class="td-tags"><span class="tag tag-info">联票</span></div></td>
-              <td><div class="td-value">联票€18（与斗兽场共用）</div></td>
-              <td><div class="td-value">与斗兽场相同（9:00开始）</div></td>
-              <td><div class="td-free">与斗兽场相同（每月第一个周日等）</div></td>
-              <td><div class="td-closed">12月25日、1月1日</div></td>
-              <td class="td-expand">▼</td>
-            </tr>
-            <tr class="tr-notes" id="rome-4-notes"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>购买斗兽场门票即可进入，无需额外购买</span></li><li><span style="color:#f59e0b">•</span><span>地面不平，建议穿舒适的运动鞋</span></li><li><span style="color:#f59e0b">•</span><span>夏季烈日暴晒，建议带水和防晒霜</span></li><li><span style="color:#f59e0b">•</span><span>帕拉蒂尼山可俯瞰整个古罗马广场全景</span></li></ul><div class="notes-addr">地址：Via della Salara Vecchia, 5/6, 00186 Roma</div></div></td></tr>
-
-            <tr onclick="toggleTableRow('rome-5-notes')">
-              <td><div class="td-name">圣天使堡</div><div class="td-name-en">Castel Sant'Angelo</div><div class="td-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://www.coopculture.it/en/tickets/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 官方订票</a></td>
-              <td><div class="td-value">成人：€13
-欧盟18—25岁：€2
-18岁以下：免费</div></td>
-              <td><div class="td-value">周二至周日 9:00—19:30</div></td>
-              <td><div class="td-free">每月第一个周日</div></td>
-              <td><div class="td-closed">每周一；1月1日、12月25日</div></td>
-              <td class="td-expand">▼</td>
-            </tr>
-            <tr class="tr-notes" id="rome-5-notes"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>建议提前网上预约，节省排队时间</span></li><li><span style="color:#f59e0b">•</span><span>顶层露台可俯瞰罗马全景，是拍照绝佳地点</span></li><li><span style="color:#f59e0b">•</span><span>内部有多层展览，参观时间约1.5—2小时</span></li></ul><div class="notes-addr">地址：Lungotevere Castello, 50, 00193 Roma</div></div></td></tr>
-
-            <tr onclick="toggleTableRow('rome-6-notes')">
-              <td><div class="td-name">特雷维喷泉</div><div class="td-name-en">Trevi Fountain</div><div class="td-tags"><span class="tag tag-free">免费</span></div></td>
-              <td><div class="td-value">免费（旺季近景区：€2）</div></td>
-              <td><div class="td-value">全天开放（24小时）</div></td>
-              <td><div class="td-free">全年免费</div></td>
-              <td><div class="td-closed" style="color:#a8a29e">无</div></td>
-              <td class="td-expand">▼</td>
-            </tr>
-            <tr class="tr-notes" id="rome-6-notes"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>旺季建议清晨6:00—8:00或深夜前往</span></li><li><span style="color:#f59e0b">•</span><span>禁止坐在喷泉边缘，违者罚款高达€500</span></li><li><span style="color:#f59e0b">•</span><span>附近扒手较多，注意保管财物</span></li></ul><div class="notes-addr">地址：Piazza di Trevi, 00187 Roma</div></div></td></tr>
-
-            <tr onclick="toggleTableRow('rome-7-notes')">
-              <td><div class="td-name">博尔盖塞美术馆</div><div class="td-name-en">Galleria Borghese</div><div class="td-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-info">限时参观</span></div><a href="https://borghese.gallery/tickets/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 官方订票</a></td>
-              <td><div class="td-value">成人：€18（含€2预约费）
-欧盟18—25岁：€4
-18岁以下：免费（仍需预约）</div></td>
-              <td><div class="td-value">周二至周日 9:00—19:00
-每场2小时（限360人）
-09:00/11:00/13:00/15:00/17:00</div></td>
-              <td><div class="td-free">每月第一个周日
-（仍需预约，名额极少）</div></td>
-              <td><div class="td-closed">每周一、12月25日、1月1日</div></td>
-              <td class="td-expand">▼</td>
-            </tr>
-            <tr class="tr-notes" id="rome-7-notes"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>旺季建议提前1—2个月预约，官网票通常提前数周售罄</span></li><li><span style="color:#f59e0b">•</span><span>每场参观严格限时2小时，到时须离场</span></li><li><span style="color:#f59e0b">•</span><span>禁止携带大型背包入内，需寄存于免费衣帽间</span></li><li><span style="color:#f59e0b">•</span><span>馆内收藏贝尼尼雕塑、卡拉瓦乔画作及拉斐尔作品</span></li></ul><div class="notes-addr">地址：Piazzale Scipione Borghese, 5, 00197 Roma</div></div></td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="table-footer">ℹ️ 点击任意行可展开查看详细注意事项</div>
+      <div class="card"><div class="card-header" style="background:#FDF0EA;border-bottom:2px solid rgba(160,80,31,0.12)"><div class="card-name">博尔盖塞美术馆</div><div class="card-name-en">Galleria Borghese</div><div class="card-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-info">限时参观</span></div><a href="https://borghese.gallery/tickets/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人：€18（含€2预约费）
+18岁以下：免费（仍需预约）</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周二至周日
+每场2小时
+09/11/13/15/17时</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">每月第一个周日
+（仍需预约，名额极少）</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">每周一；12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>旺季建议提前1—2个月预约</span></li><li><span style="color:#f59e0b">•</span><span>每场参观严格限时2小时</span></li></ul><div class="card-notes-addr">地址：Piazzale Scipione Borghese, 5, 00197 Roma</div></div></div>
     </div>
+    <div class="desktop-table"><div class="table-scroll"><table><thead><tr><th>景点名称</th><th>门票价格</th><th>开放时间</th><th>免费日</th><th>闭馆日</th><th>详情</th></tr></thead><tbody>
+      <tr onclick="toggleTableRow('r1')"><td><div class="td-name">斗兽场</div><div class="td-name-en">Colosseum</div><div class="td-tags"><span class="tag tag-reserve">需预约</span></div><a href="https://ticketing.colosseo.it/en/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 订票</a></td><td><div class="td-value">标准票€18 / 全体验€24</div></td><td><div class="td-value">夏季 8:30—19:15 / 冬季 8:30—16:30</div></td><td><div class="td-free">每月第一个周日；4月25日、6月2日</div></td><td><div class="td-closed">12月25日、1月1日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="r1"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>旺季提前预约，免费日排队极长</span></li><li><span style="color:#f59e0b">•</span><span>建议8:30开门即入或17:00后入场</span></li></ul><div class="notes-addr">Piazza del Colosseo, 1, 00184 Roma</div></div></td></tr>
+      <tr onclick="toggleTableRow('r2')"><td><div class="td-name">梵蒂冈博物馆与西斯廷教堂</div><div class="td-name-en">Vatican Museums</div><div class="td-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-warning">着装</span></div><a href="https://tickets.museivaticani.va" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 订票</a></td><td><div class="td-value">成人€20/€25（预约）；7岁以下免费</div></td><td><div class="td-value">周一至周六 8:00—20:00</div></td><td><div class="td-free">每月最后一个周日 9:00—14:00</div></td><td><div class="td-closed">周日（除最后一个）；12月25日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="r2"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>提前预约；西斯廷教堂禁止拍照、禁止短裤无袖</span></li></ul><div class="notes-addr">Vatican City</div></div></td></tr>
+      <tr onclick="toggleTableRow('r3')"><td><div class="td-name">万神殿</div><div class="td-name-en">Pantheon</div><div class="td-tags"><span class="tag tag-reserve">需预约</span></div><a href="https://www.museiitaliani.it/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 订票</a></td><td><div class="td-value">基础票€5 / 含导览€15</div></td><td><div class="td-value">周一至周六 9:00—19:00；周日 9:00—18:00</div></td><td><div class="td-free-none">无常规免费日</div></td><td><div class="td-closed">1月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="r3"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>2023年起收费，进入须着装得体</span></li></ul><div class="notes-addr">Piazza della Rotonda, 00186 Roma</div></div></td></tr>
+      <tr onclick="toggleTableRow('r4')"><td><div class="td-name">古罗马广场与帕拉蒂尼山</div><div class="td-name-en">Roman Forum &amp; Palatine Hill</div><div class="td-tags"><span class="tag tag-info">联票</span></div></td><td><div class="td-value">联票€18（斗兽场同票）</div></td><td><div class="td-value">与斗兽场相同</div></td><td><div class="td-free">与斗兽场相同</div></td><td><div class="td-closed">12月25日、1月1日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="r4"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>购斗兽场票即可入场；地面不平，穿舒适鞋</span></li></ul></div></td></tr>
+      <tr onclick="toggleTableRow('r5')"><td><div class="td-name">圣天使堡</div><div class="td-name-en">Castel Sant'Angelo</div><div class="td-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://www.coopculture.it/en/tickets/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 订票</a></td><td><div class="td-value">成人€13；18岁以下免费</div></td><td><div class="td-value">周二至周日 9:00—19:30</div></td><td><div class="td-free">每月第一个周日</div></td><td><div class="td-closed">每周一；1月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="r5"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>顶层露台俯瞰罗马全景；与梵蒂冈步行约10分钟</span></li></ul></div></td></tr>
+      <tr onclick="toggleTableRow('r6')"><td><div class="td-name">特雷维喷泉</div><div class="td-name-en">Trevi Fountain</div><div class="td-tags"><span class="tag tag-free">免费</span></div></td><td><div class="td-value">免费</div></td><td><div class="td-value">全天开放</div></td><td><div class="td-free">全年免费</div></td><td><div class="td-closed" style="color:#a8a29e">无</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="r6"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>旺季建议清晨或深夜前往；禁止坐在边缘（罚款€500）</span></li></ul></div></td></tr>
+      <tr onclick="toggleTableRow('r7')"><td><div class="td-name">博尔盖塞美术馆</div><div class="td-name-en">Galleria Borghese</div><div class="td-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-info">限时</span></div><a href="https://borghese.gallery/tickets/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 订票</a></td><td><div class="td-value">成人€18；18岁以下免费（仍需预约）</div></td><td><div class="td-value">周二至周日，每场2小时</div></td><td><div class="td-free">每月第一个周日（名额极少）</div></td><td><div class="td-closed">每周一；12月25日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="r7"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>旺季提前1—2个月预约；每场严格限时2小时</span></li></ul></div></td></tr>
+    </tbody></table></div><div class="table-footer">ℹ️ 点击任意行展开注意事项</div></div>
   </section>
 
   <!-- ===== FLORENCE ===== -->
   <section class="city-section" id="city-florence">
-    <div class="city-header" style="background:#8B6914">
-      <div class="city-header-bg" style="background:radial-gradient(circle at 20% 50%,white 0%,transparent 60%)"></div>
-      <div class="city-header-content">
-        <div>
-          <div class="city-label">Italy · Firenze</div>
-          <h2 class="city-name">佛罗伦萨</h2>
-          <p class="city-desc">文艺复兴的摇篮，托斯卡纳大区首府，艺术与建筑的圣地</p>
-        </div>
-        <div class="hidden-sm" style="text-align:right"><div class="city-count">5</div><div class="city-count-label">景点</div></div>
-      </div>
-    </div>
-    <div class="map-wrap">
-      <button class="map-header" onclick="toggleMap('map-florence')">
-        <span class="map-header-left"><span style="color:#8B6914">📍</span> 佛罗伦萨 景点地图 <span style="font-size:0.75rem;color:#a8a29e">（5 处景点）</span></span>
-        <span id="map-florence-arrow">▼</span>
-      </button>
-      <div class="map-body" id="map-florence">
-        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=11.2258%2C43.7496%2C11.2858%2C43.7996&amp;layer=mapnik" loading="lazy" title="佛罗伦萨地图"></iframe>
-        <div class="map-footer">地图数据来自 OpenStreetMap</div>
-      </div>
-    </div>
+    <div class="city-header" style="background:#8B6914"><div class="city-header-content"><div><div class="city-label">Italy · Firenze</div><h2 class="city-name">佛罗伦萨</h2><p class="city-desc">文艺复兴的摇篮，托斯卡纳大区首府，艺术与建筑的圣地</p></div></div></div>
     <div class="mobile-cards">
-      <div class="card"><div class="card-header" style="background:#FBF5E6;border-bottom:2px solid rgba(110,82,16,0.12)"><div class="card-name">乌菲兹美术馆</div><div class="card-name-en">Uffizi Gallery</div><div class="card-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-warning">禁止闪光灯</span></div><a href="https://www.uffizi.it/en/pages/tickets-fares" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">现场：€25 / 预约：€29
+      <div class="card"><div class="card-header" style="background:#FBF5E6;border-bottom:2px solid rgba(110,82,16,0.12)"><div class="card-name">乌菲兹美术馆</div><div class="card-name-en">Uffizi Gallery</div><div class="card-tags"><span class="tag tag-reserve">需预约</span></div><a href="https://www.uffizi.it/en/pages/tickets-fares" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">现场€25 / 预约€29
 18岁以下：免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周二至周日
-8:15—18:30</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">每月第一个周日
-4月25日、6月2日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">每周一；1月1日
-5月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>强烈建议提前预约，旺季极难买到当日票</span></li><li><span style="color:#f59e0b">•</span><span>馆内禁止使用闪光灯拍照</span></li><li><span style="color:#f59e0b">•</span><span>参观时间建议2—3小时</span></li><li><span style="color:#f59e0b">•</span><span>波提切利《春》和《维纳斯的诞生》是镇馆之宝，位于第10—14展厅</span></li></ul><div class="card-notes-addr">地址：Piazzale degli Uffizi, 6, 50122 Firenze</div></div></div>
+8:15—18:30</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">每月第一个周日
+4月25日、6月2日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">每周一；1月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>强烈建议提前预约，旺季极难买到当日票</span></li><li><span style="color:#f59e0b">•</span><span>波提切利《春》和《维纳斯的诞生》是镇馆之宝</span></li></ul><div class="card-notes-addr">地址：Piazzale degli Uffizi, 6, 50122 Firenze</div></div></div>
 
-      <div class="card"><div class="card-header" style="background:#FBF5E6;border-bottom:2px solid rgba(110,82,16,0.12)"><div class="card-name">佛罗伦萨大教堂建筑群</div><div class="card-name-en">Santa Maria del Fiore (Duomo Complex)</div><div class="card-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-warning">着装要求</span><span class="tag tag-free">部分免费</span></div><a href="https://tickets.duomo.firenze.it/en/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">大教堂：免费
-穹顶联票：€30（成人）
-钟楼联票：€20（成人）</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">大教堂：10:15—15:45
-穹顶：8:15—18:45
-洗礼堂：8:30—19:30</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">大教堂全年免费
-其他区域每月第一个周日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">1月1日、复活节
-12月25日（各区不同）</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>穹顶须提前预约，强烈建议至少提前1周</span></li><li><span style="color:#f59e0b">•</span><span>穹顶攀爬需爬463级台阶，不适合恐高者</span></li><li><span style="color:#f59e0b">•</span><span>进入大教堂须着装得体（遮肩遮膝）</span></li></ul><div class="card-notes-addr">地址：Piazza del Duomo, 50122 Firenze</div></div></div>
+      <div class="card"><div class="card-header" style="background:#FBF5E6;border-bottom:2px solid rgba(110,82,16,0.12)"><div class="card-name">佛罗伦萨大教堂建筑群</div><div class="card-name-en">Santa Maria del Fiore (Duomo)</div><div class="card-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-warning">着装要求</span><span class="tag tag-free">部分免费</span></div><a href="https://tickets.duomo.firenze.it/en/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">大教堂：免费
+穹顶联票：€30
+钟楼联票：€20</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">大教堂：10:15—15:45
+穹顶：8:15—18:45</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">大教堂全年免费</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">1月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>穹顶须提前预约，需爬463级台阶</span></li><li><span style="color:#f59e0b">•</span><span>进入须遮肩遮膝</span></li></ul><div class="card-notes-addr">地址：Piazza del Duomo, 50122 Firenze</div></div></div>
 
-      <div class="card"><div class="card-header" style="background:#FBF5E6;border-bottom:2px solid rgba(110,82,16,0.12)"><div class="card-name">学院美术馆</div><div class="card-name-en">Galleria dell'Accademia</div><div class="card-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-warning">禁止闪光灯</span></div><a href="https://www.b-ticket.com/b-ticket/firenzemusei/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人：€20（含€4预约费）
-欧盟18—25岁：€2+€4
+      <div class="card"><div class="card-header" style="background:#FBF5E6;border-bottom:2px solid rgba(110,82,16,0.12)"><div class="card-name">学院美术馆</div><div class="card-name-en">Galleria dell'Accademia</div><div class="card-tags"><span class="tag tag-reserve">需预约</span></div><a href="https://www.b-ticket.com/b-ticket/firenzemusei/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人€20（含€4预约费）
 18岁以下：免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周二至周日
-8:15—18:50</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">每月第一个周日
-4月25日、6月2日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">每周一；1月1日
-5月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>米开朗基罗《大卫》雕像所在地，必须提前预约</span></li><li><span style="color:#f59e0b">•</span><span>禁止使用闪光灯</span></li><li><span style="color:#f59e0b">•</span><span>《大卫》原作高5.17米，位于专门设计的圆形大厅中央</span></li></ul><div class="card-notes-addr">地址：Via Ricasoli, 58/60, 50129 Firenze</div></div></div>
+8:15—18:50</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">每月第一个周日、4月25日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">每周一；1月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>米开朗基罗《大卫》原作所在地，必须提前预约</span></li></ul><div class="card-notes-addr">地址：Via Ricasoli, 58/60, 50129 Firenze</div></div></div>
 
-      <div class="card"><div class="card-header" style="background:#FBF5E6;border-bottom:2px solid rgba(110,82,16,0.12)"><div class="card-name">旧宫</div><div class="card-name-en">Palazzo Vecchio</div><div class="card-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://ticketsmuseums.comune.fi.it/1_museo-di-palazzo-vecchio/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人（25岁以上）：€18.5
-青年（18—25岁）：€16
-18岁以下：免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周一至周三、周六 9:00—23:00
-周四、周五 9:00—14:00</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">每月第一个周日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">不定期，建议查官网</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>可登上钟楼俯瞰佛罗伦萨全景</span></li><li><span style="color:#f59e0b">•</span><span>内有五百人大厅，瓦萨里壁画极为壮观</span></li><li><span style="color:#f59e0b">•</span><span>广场上的大卫雕像为复制品，原作在学院美术馆</span></li></ul><div class="card-notes-addr">地址：Piazza della Signoria, 50122 Firenze</div></div></div>
+      <div class="card"><div class="card-header" style="background:#FBF5E6;border-bottom:2px solid rgba(110,82,16,0.12)"><div class="card-name">旧宫</div><div class="card-name-en">Palazzo Vecchio</div><div class="card-tags"><span class="tag tag-reserve">推荐预约</span></div></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人€18.5 / 青年€16</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周一—三、周六 9:00—23:00
+周四、周五 9:00—14:00</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">每月第一个周日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">不定期，查官网</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>内有五百人大厅，瓦萨里壁画极为壮观</span></li></ul><div class="card-notes-addr">地址：Piazza della Signoria, 50122 Firenze</div></div></div>
 
-      <div class="card"><div class="card-header" style="background:#FBF5E6;border-bottom:2px solid rgba(110,82,16,0.12)"><div class="card-name">老桥</div><div class="card-name-en">Ponte Vecchio</div><div class="card-tags"><span class="tag tag-free">免费</span></div></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">全天开放</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">全年免费</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#a8a29e">无</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>桥上全是珠宝金店，价格较高</span></li><li><span style="color:#f59e0b">•</span><span>旺季人流极大，建议清晨或傍晚前往</span></li><li><span style="color:#f59e0b">•</span><span>二战期间是佛罗伦萨唯一未被炸毁的桥梁</span></li></ul><div class="card-notes-addr">地址：Ponte Vecchio, 50125 Firenze</div></div></div>
+      <div class="card"><div class="card-header" style="background:#FBF5E6;border-bottom:2px solid rgba(110,82,16,0.12)"><div class="card-name">老桥</div><div class="card-name-en">Ponte Vecchio</div><div class="card-tags"><span class="tag tag-free">免费</span></div></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">全天开放</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">全年免费</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#a8a29e">无</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>桥上全是珠宝金店；旺季建议清晨或傍晚前往</span></li></ul><div class="card-notes-addr">地址：Ponte Vecchio, 50125 Firenze</div></div></div>
     </div>
-    <div class="desktop-table">
-      <div class="table-scroll"><table><thead><tr><th>🎫 景点名称</th><th>🎫 门票价格</th><th>🕐 开放时间</th><th>📅 免费日</th><th>🚫 闭馆日</th><th>详情</th></tr></thead><tbody>
-        <tr onclick="toggleTableRow('fl-1')"><td><div class="td-name">乌菲兹美术馆</div><div class="td-name-en">Uffizi Gallery</div><div class="td-tags"><span class="tag tag-reserve">需预约</span></div><a href="https://www.uffizi.it/en/pages/tickets-fares" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 官方订票</a></td><td><div class="td-value">现场：€25 / 预约：€29（含€4预约费）
-16:00后：€16 / 18岁以下：免费</div></td><td><div class="td-value">周二至周日 8:15—18:30</div></td><td><div class="td-free">每月第一个周日
-4月25日、6月2日、11月4日</div></td><td><div class="td-closed">每周一；1月1日、5月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
-        <tr class="tr-notes" id="fl-1"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>强烈建议提前预约，旺季极难买到当日票</span></li><li><span style="color:#f59e0b">•</span><span>馆内禁止使用闪光灯拍照</span></li><li><span style="color:#f59e0b">•</span><span>波提切利《春》和《维纳斯的诞生》是镇馆之宝，位于第10—14展厅</span></li></ul><div class="notes-addr">地址：Piazzale degli Uffizi, 6, 50122 Firenze</div></div></td></tr>
-        <tr onclick="toggleTableRow('fl-2')"><td><div class="td-name">佛罗伦萨大教堂建筑群</div><div class="td-name-en">Santa Maria del Fiore</div><div class="td-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-warning">着装要求</span><span class="tag tag-free">部分免费</span></div><a href="https://tickets.duomo.firenze.it/en/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 官方订票</a></td><td><div class="td-value">大教堂：免费
-布鲁内莱斯基通票（穹顶+博物馆等）：€30
-钟楼联票：€20</div></td><td><div class="td-value">大教堂：10:15—15:45
-穹顶：8:15—18:45
-洗礼堂：8:30—19:30</div></td><td><div class="td-free">大教堂全年免费
-其他区域每月第一个周日</div></td><td><div class="td-closed">1月1日、复活节、12月25日</div></td><td class="td-expand">▼</td></tr>
-        <tr class="tr-notes" id="fl-2"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>穹顶须提前预约，建议至少提前1周</span></li><li><span style="color:#f59e0b">•</span><span>穹顶攀爬需爬463级台阶，不适合恐高者</span></li><li><span style="color:#f59e0b">•</span><span>进入大教堂须着装得体（遮肩遮膝）</span></li></ul><div class="notes-addr">地址：Piazza del Duomo, 50122 Firenze</div></div></td></tr>
-        <tr onclick="toggleTableRow('fl-3')"><td><div class="td-name">学院美术馆</div><div class="td-name-en">Galleria dell'Accademia</div><div class="td-tags"><span class="tag tag-reserve">需预约</span></div><a href="https://www.b-ticket.com/b-ticket/firenzemusei/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 官方订票</a></td><td><div class="td-value">成人：€20（含€4预约费）
-18岁以下：免费</div></td><td><div class="td-value">周二至周日 8:15—18:50</div></td><td><div class="td-free">每月第一个周日、4月25日、6月2日</div></td><td><div class="td-closed">每周一；1月1日、5月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
-        <tr class="tr-notes" id="fl-3"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>米开朗基罗《大卫》雕像所在地，必须提前预约</span></li><li><span style="color:#f59e0b">•</span><span>《大卫》原作高5.17米，位于专门设计的圆形大厅中央</span></li></ul><div class="notes-addr">地址：Via Ricasoli, 58/60, 50129 Firenze</div></div></td></tr>
-        <tr onclick="toggleTableRow('fl-4')"><td><div class="td-name">旧宫</div><div class="td-name-en">Palazzo Vecchio</div><div class="td-tags"><span class="tag tag-reserve">推荐预约</span></div></td><td><div class="td-value">成人：€18.5 / 青年：€16 / 18岁以下：免费</div></td><td><div class="td-value">周一—三、周六 9:00—23:00
-周四、周五 9:00—14:00</div></td><td><div class="td-free">每月第一个周日</div></td><td><div class="td-closed">不定期，建议查官网</div></td><td class="td-expand">▼</td></tr>
-        <tr class="tr-notes" id="fl-4"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>可登上钟楼俯瞰佛罗伦萨全景</span></li><li><span style="color:#f59e0b">•</span><span>内有五百人大厅，瓦萨里壁画极为壮观</span></li></ul><div class="notes-addr">地址：Piazza della Signoria, 50122 Firenze</div></div></td></tr>
-        <tr onclick="toggleTableRow('fl-5')"><td><div class="td-name">老桥</div><div class="td-name-en">Ponte Vecchio</div><div class="td-tags"><span class="tag tag-free">免费</span></div></td><td><div class="td-value">免费</div></td><td><div class="td-value">全天开放</div></td><td><div class="td-free">全年免费</div></td><td><div class="td-closed" style="color:#a8a29e">无</div></td><td class="td-expand">▼</td></tr>
-        <tr class="tr-notes" id="fl-5"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>桥上全是珠宝金店，价格较高</span></li><li><span style="color:#f59e0b">•</span><span>旺季人流极大，建议清晨或傍晚前往</span></li></ul><div class="notes-addr">地址：Ponte Vecchio, 50125 Firenze</div></div></td></tr>
-      </tbody></table></div>
-      <div class="table-footer">ℹ️ 点击任意行可展开查看详细注意事项</div>
-    </div>
+    <div class="desktop-table"><div class="table-scroll"><table><thead><tr><th>景点名称</th><th>门票价格</th><th>开放时间</th><th>免费日</th><th>闭馆日</th><th>详情</th></tr></thead><tbody>
+      <tr onclick="toggleTableRow('f1')"><td><div class="td-name">乌菲兹美术馆</div><div class="td-name-en">Uffizi Gallery</div><div class="td-tags"><span class="tag tag-reserve">需预约</span></div><a href="https://www.uffizi.it/en/pages/tickets-fares" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 订票</a></td><td><div class="td-value">现场€25 / 预约€29；18岁以下免费</div></td><td><div class="td-value">周二至周日 8:15—18:30</div></td><td><div class="td-free">每月第一个周日；4月25日、6月2日</div></td><td><div class="td-closed">每周一；1月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="f1"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>提前预约；禁止闪光灯；波提切利镇馆之宝在10—14展厅</span></li></ul></div></td></tr>
+      <tr onclick="toggleTableRow('f2')"><td><div class="td-name">佛罗伦萨大教堂</div><div class="td-name-en">Santa Maria del Fiore</div><div class="td-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-free">部分免费</span></div><a href="https://tickets.duomo.firenze.it/en/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 订票</a></td><td><div class="td-value">大教堂：免费；穹顶联票€30；钟楼€20</div></td><td><div class="td-value">大教堂 10:15—15:45；穹顶 8:15—18:45</div></td><td><div class="td-free">大教堂全年免费</div></td><td><div class="td-closed">1月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="f2"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>穹顶提前预约；爬463级台阶；须遮肩遮膝</span></li></ul></div></td></tr>
+      <tr onclick="toggleTableRow('f3')"><td><div class="td-name">学院美术馆</div><div class="td-name-en">Galleria dell'Accademia</div><div class="td-tags"><span class="tag tag-reserve">需预约</span></div><a href="https://www.b-ticket.com/b-ticket/firenzemusei/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 订票</a></td><td><div class="td-value">成人€20；18岁以下免费</div></td><td><div class="td-value">周二至周日 8:15—18:50</div></td><td><div class="td-free">每月第一个周日；4月25日</div></td><td><div class="td-closed">每周一；1月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="f3"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>《大卫》原作所在地，必须提前预约</span></li></ul></div></td></tr>
+      <tr onclick="toggleTableRow('f4')"><td><div class="td-name">旧宫</div><div class="td-name-en">Palazzo Vecchio</div></td><td><div class="td-value">成人€18.5 / 青年€16</div></td><td><div class="td-value">周一—三、周六 9:00—23:00</div></td><td><div class="td-free">每月第一个周日</div></td><td><div class="td-closed">不定期，查官网</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="f4"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>五百人大厅壁画极为壮观</span></li></ul></div></td></tr>
+      <tr onclick="toggleTableRow('f5')"><td><div class="td-name">老桥</div><div class="td-name-en">Ponte Vecchio</div><div class="td-tags"><span class="tag tag-free">免费</span></div></td><td><div class="td-value">免费</div></td><td><div class="td-value">全天开放</div></td><td><div class="td-free">全年免费</div></td><td><div class="td-closed" style="color:#a8a29e">无</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="f5"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>旺季清晨或傍晚前往</span></li></ul></div></td></tr>
+    </tbody></table></div><div class="table-footer">ℹ️ 点击任意行展开注意事项</div></div>
   </section>
 
   <!-- ===== VENICE ===== -->
   <section class="city-section" id="city-venice">
-    <div class="city-header" style="background:#1B4B8A">
-      <div class="city-header-bg" style="background:radial-gradient(circle at 20% 50%,white 0%,transparent 60%)"></div>
-      <div class="city-header-content"><div><div class="city-label">Italy · Venezia</div><h2 class="city-name">威尼斯</h2><p class="city-desc">建在水上的奇迹之城，118座岛屿、400余座桥梁构成的独特世界</p></div><div class="hidden-sm" style="text-align:right"><div class="city-count">4</div><div class="city-count-label">景点</div></div></div>
-    </div>
-    <div class="map-wrap"><button class="map-header" onclick="toggleMap('map-venice')"><span class="map-header-left"><span style="color:#1B4B8A">📍</span> 威尼斯 景点地图 <span style="font-size:0.75rem;color:#a8a29e">（4 处景点）</span></span><span id="map-venice-arrow">▼</span></button><div class="map-body" id="map-venice"><iframe src="https://www.openstreetmap.org/export/embed.html?bbox=12.3026%2C45.4171%2C12.3626%2C45.4671&amp;layer=mapnik" loading="lazy" title="威尼斯地图"></iframe><div class="map-footer">地图数据来自 OpenStreetMap</div></div></div>
+    <div class="city-header" style="background:#1B4B8A"><div class="city-header-content"><div><div class="city-label">Italy · Venezia</div><h2 class="city-name">威尼斯</h2><p class="city-desc">建在水上的奇迹之城，118座岛屿、400余座桥梁构成的独特世界</p></div></div></div>
     <div class="mobile-cards">
-      <div class="card"><div class="card-header" style="background:#EAF0FB;border-bottom:2px solid rgba(21,58,110,0.12)"><div class="card-name">圣马可广场与圣马可大教堂</div><div class="card-name-en">Piazza San Marco &amp; Basilica di San Marco</div><div class="card-tags"><span class="tag tag-warning">着装要求</span><span class="tag tag-free">部分免费</span></div><a href="https://www.basilicasanmarco.it/en/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">广场：免费
-大教堂：€3
-钟楼：€10</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">大教堂：9:30—17:15
-钟楼：9:30—21:15（夏）
-9:30—17:45（冬）</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">广场全年免费</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">部分宗教节日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>进入大教堂须着装得体（遮肩遮膝），可在入口借用披肩</span></li><li><span style="color:#f59e0b">•</span><span>大教堂内部分区域禁止拍照</span></li><li><span style="color:#f59e0b">•</span><span>广场在涨潮时可能被海水淹没，建议查看潮汐预报</span></li></ul><div class="card-notes-addr">地址：P.za San Marco, 30100 Venezia</div></div></div>
+      <div class="card"><div class="card-header" style="background:#EAF0FB;border-bottom:2px solid rgba(21,58,110,0.12)"><div class="card-name">圣马可广场与圣马可大教堂</div><div class="card-name-en">Piazza San Marco &amp; Basilica</div><div class="card-tags"><span class="tag tag-warning">着装要求</span><span class="tag tag-free">部分免费</span></div></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">广场：免费
+大教堂：€3 / 钟楼：€10</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">大教堂：9:30—17:15
+钟楼：9:30—21:15（夏）</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">广场全年免费</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">部分宗教节日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>进入须着装得体（遮肩遮膝）</span></li><li><span style="color:#f59e0b">•</span><span>广场涨潮时可能被海水淹没，查看潮汐预报</span></li></ul><div class="card-notes-addr">地址：P.za San Marco, 30100 Venezia</div></div></div>
 
-      <div class="card"><div class="card-header" style="background:#EAF0FB;border-bottom:2px solid rgba(21,58,110,0.12)"><div class="card-name">总督宫</div><div class="card-name-en">Doge's Palace (Palazzo Ducale)</div><div class="card-tags"><span class="tag tag-reserve">推荐预约</span><span class="tag tag-info">联票</span></div><a href="https://muve.vivaticket.it/en/event/musei-p-san-marco-ducale/155153" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人：€30（含科雷尔博物馆）
-学生/老人：€15
-6岁以下：免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">9:00—18:00
-（夏季延长至19:00）</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">每月第一个周日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">1月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>建议提前在MUVE官网购票，旺季排队时间长</span></li><li><span style="color:#f59e0b">•</span><span>包含叹息桥参观（从内部走过）</span></li><li><span style="color:#f59e0b">•</span><span>内有大量精美壁画，丁托列托的《天堂》是世界最大油画之一</span></li></ul><div class="card-notes-addr">地址：P.za San Marco, 1, 30124 Venezia</div></div></div>
+      <div class="card"><div class="card-header" style="background:#EAF0FB;border-bottom:2px solid rgba(21,58,110,0.12)"><div class="card-name">总督宫</div><div class="card-name-en">Doge's Palace</div><div class="card-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://muve.vivaticket.it/en/event/musei-p-san-marco-ducale/155153" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人€30（含科雷尔博物馆）</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">9:00—18:00（夏至19:00）</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">每月第一个周日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">1月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>包含叹息桥参观（从内部走过）</span></li></ul><div class="card-notes-addr">地址：P.za San Marco, 1, 30124 Venezia</div></div></div>
 
-      <div class="card"><div class="card-header" style="background:#EAF0FB;border-bottom:2px solid rgba(21,58,110,0.12)"><div class="card-name">里亚托桥</div><div class="card-name-en">Rialto Bridge</div><div class="card-tags"><span class="tag tag-free">免费</span></div></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">全天开放</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">全年免费</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#a8a29e">无</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>威尼斯最古老的桥梁，横跨大运河</span></li><li><span style="color:#f59e0b">•</span><span>旺季人流极大，建议清晨前往拍照</span></li></ul><div class="card-notes-addr">地址：Sestiere San Polo, 30125 Venezia</div></div></div>
+      <div class="card"><div class="card-header" style="background:#EAF0FB;border-bottom:2px solid rgba(21,58,110,0.12)"><div class="card-name">里亚托桥</div><div class="card-name-en">Rialto Bridge</div><div class="card-tags"><span class="tag tag-free">免费</span></div></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">全天开放</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">全年免费</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#a8a29e">无</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>威尼斯最古老桥梁，旺季建议清晨前往</span></li></ul><div class="card-notes-addr">地址：Sestiere San Polo, 30125 Venezia</div></div></div>
 
-      <div class="card"><div class="card-header" style="background:#EAF0FB;border-bottom:2px solid rgba(21,58,110,0.12)"><div class="card-name">佩吉·古根海姆美术馆</div><div class="card-name-en">Peggy Guggenheim Collection</div><div class="card-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://www.guggenheim-venice.it/en/visit/tickets/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人：€16
-65岁以上：€14
-26岁以下学生：€9
-10岁以下：免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周三至周一
-10:00—18:00</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">每月第一个周日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">每周二
-1月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>现代艺术爱好者必去，收藏毕加索、达利、波洛克等大师作品</span></li><li><span style="color:#f59e0b">•</span><span>花园雕塑区域非常美丽，可欣赏大运河</span></li><li><span style="color:#f59e0b">•</span><span>周二闭馆，注意安排行程</span></li></ul><div class="card-notes-addr">地址：Dorsoduro, 701-704, 30123 Venezia</div></div></div>
+      <div class="card"><div class="card-header" style="background:#EAF0FB;border-bottom:2px solid rgba(21,58,110,0.12)"><div class="card-name">佩吉·古根海姆美术馆</div><div class="card-name-en">Peggy Guggenheim Collection</div><div class="card-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://www.guggenheim-venice.it/en/visit/tickets/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人€16 / 65岁以上€14
+学生€9 / 10岁以下免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周三至周一
+10:00—18:00</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">每月第一个周日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">每周二；1月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>收藏毕加索、达利、波洛克等现代艺术大师作品</span></li></ul><div class="card-notes-addr">地址：Dorsoduro 701-704, 30123 Venezia</div></div></div>
     </div>
-    <div class="desktop-table"><div class="table-scroll"><table><thead><tr><th>🎫 景点名称</th><th>🎫 门票价格</th><th>🕐 开放时间</th><th>📅 免费日</th><th>🚫 闭馆日</th><th>详情</th></tr></thead><tbody>
-      <tr onclick="toggleTableRow('ve-1')"><td><div class="td-name">圣马可广场与圣马可大教堂</div><div class="td-name-en">Piazza San Marco &amp; Basilica</div><div class="td-tags"><span class="tag tag-warning">着装要求</span><span class="tag tag-free">部分免费</span></div></td><td><div class="td-value">广场：免费 / 大教堂：€3 / 钟楼：€10</div></td><td><div class="td-value">大教堂 9:30—17:15
-钟楼 9:30—21:15（夏）</div></td><td><div class="td-free">广场全年免费</div></td><td><div class="td-closed">部分宗教节日</div></td><td class="td-expand">▼</td></tr>
-      <tr class="tr-notes" id="ve-1"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>进入大教堂须着装得体（遮肩遮膝）</span></li><li><span style="color:#f59e0b">•</span><span>广场在涨潮时可能被海水淹没，建议查看潮汐预报</span></li></ul><div class="notes-addr">地址：P.za San Marco, 30100 Venezia</div></div></td></tr>
-      <tr onclick="toggleTableRow('ve-2')"><td><div class="td-name">总督宫</div><div class="td-name-en">Doge's Palace</div><div class="td-tags"><span class="tag tag-reserve">推荐预约</span><span class="tag tag-info">联票</span></div><a href="https://muve.vivaticket.it/en/event/musei-p-san-marco-ducale/155153" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 官方订票</a></td><td><div class="td-value">成人：€30（含科雷尔博物馆）
-学生/老人/6—14岁：€15</div></td><td><div class="td-value">9:00—18:00（夏季至19:00）</div></td><td><div class="td-free">每月第一个周日</div></td><td><div class="td-closed">1月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
-      <tr class="tr-notes" id="ve-2"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>包含叹息桥参观（从内部走过）</span></li><li><span style="color:#f59e0b">•</span><span>丁托列托的《天堂》是世界最大油画之一</span></li></ul><div class="notes-addr">地址：P.za San Marco, 1, 30124 Venezia</div></div></td></tr>
-      <tr onclick="toggleTableRow('ve-3')"><td><div class="td-name">里亚托桥</div><div class="td-name-en">Rialto Bridge</div><div class="td-tags"><span class="tag tag-free">免费</span></div></td><td><div class="td-value">免费</div></td><td><div class="td-value">全天开放</div></td><td><div class="td-free">全年免费</div></td><td><div class="td-closed" style="color:#a8a29e">无</div></td><td class="td-expand">▼</td></tr>
-      <tr class="tr-notes" id="ve-3"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>威尼斯最古老桥梁，旺季建议清晨前往拍照</span></li></ul><div class="notes-addr">地址：Sestiere San Polo, 30125 Venezia</div></div></td></tr>
-      <tr onclick="toggleTableRow('ve-4')"><td><div class="td-name">佩吉·古根海姆美术馆</div><div class="td-name-en">Peggy Guggenheim Collection</div><div class="td-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://www.guggenheim-venice.it/en/visit/tickets/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 官方订票</a></td><td><div class="td-value">成人：€16 / 65岁以上：€14 / 学生：€9</div></td><td><div class="td-value">周三至周一 10:00—18:00</div></td><td><div class="td-free">每月第一个周日</div></td><td><div class="td-closed">每周二；1月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
-      <tr class="tr-notes" id="ve-4"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>收藏毕加索、达利、波洛克等现代艺术大师作品</span></li></ul><div class="notes-addr">地址：Dorsoduro, 701-704, 30123 Venezia</div></div></td></tr>
-    </tbody></table></div><div class="table-footer">ℹ️ 点击任意行可展开查看详细注意事项</div></div>
+    <div class="desktop-table"><div class="table-scroll"><table><thead><tr><th>景点名称</th><th>门票价格</th><th>开放时间</th><th>免费日</th><th>闭馆日</th><th>详情</th></tr></thead><tbody>
+      <tr onclick="toggleTableRow('v1')"><td><div class="td-name">圣马可广场与大教堂</div><div class="td-name-en">Piazza San Marco</div><div class="td-tags"><span class="tag tag-free">部分免费</span></div></td><td><div class="td-value">广场：免费；大教堂€3；钟楼€10</div></td><td><div class="td-value">大教堂 9:30—17:15</div></td><td><div class="td-free">广场全年免费</div></td><td><div class="td-closed">部分宗教节日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="v1"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>须遮肩遮膝；广场涨潮时可能被淹</span></li></ul></div></td></tr>
+      <tr onclick="toggleTableRow('v2')"><td><div class="td-name">总督宫</div><div class="td-name-en">Doge's Palace</div><div class="td-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://muve.vivaticket.it/en/event/musei-p-san-marco-ducale/155153" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 订票</a></td><td><div class="td-value">成人€30（含科雷尔博物馆）</div></td><td><div class="td-value">9:00—18:00（夏至19:00）</div></td><td><div class="td-free">每月第一个周日</div></td><td><div class="td-closed">1月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="v2"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>包含叹息桥参观</span></li></ul></div></td></tr>
+      <tr onclick="toggleTableRow('v3')"><td><div class="td-name">里亚托桥</div><div class="td-name-en">Rialto Bridge</div><div class="td-tags"><span class="tag tag-free">免费</span></div></td><td><div class="td-value">免费</div></td><td><div class="td-value">全天开放</div></td><td><div class="td-free">全年免费</div></td><td><div class="td-closed" style="color:#a8a29e">无</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="v3"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>旺季清晨前往拍照</span></li></ul></div></td></tr>
+      <tr onclick="toggleTableRow('v4')"><td><div class="td-name">佩吉·古根海姆美术馆</div><div class="td-name-en">Peggy Guggenheim</div><div class="td-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://www.guggenheim-venice.it/en/visit/tickets/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 订票</a></td><td><div class="td-value">成人€16 / 学生€9</div></td><td><div class="td-value">周三至周一 10:00—18:00</div></td><td><div class="td-free">每月第一个周日</div></td><td><div class="td-closed">每周二；1月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="v4"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>毕加索、达利、波洛克现代艺术</span></li></ul></div></td></tr>
+    </tbody></table></div><div class="table-footer">ℹ️ 点击任意行展开注意事项</div></div>
   </section>
 
   <!-- ===== MILAN ===== -->
   <section class="city-section" id="city-milan">
-    <div class="city-header" style="background:#3A3A4A"><div class="city-header-bg" style="background:radial-gradient(circle at 20% 50%,white 0%,transparent 60%)"></div><div class="city-header-content"><div><div class="city-label">Italy · Milano</div><h2 class="city-name">米兰</h2><p class="city-desc">意大利时尚与金融之都，哥特式建筑与现代设计的完美融合</p></div><div class="hidden-sm" style="text-align:right"><div class="city-count">4</div><div class="city-count-label">景点</div></div></div></div>
-    <div class="map-wrap"><button class="map-header" onclick="toggleMap('map-milan')"><span class="map-header-left"><span style="color:#3A3A4A">📍</span> 米兰 景点地图 <span style="font-size:0.75rem;color:#a8a29e">（4 处景点）</span></span><span id="map-milan-arrow">▼</span></button><div class="map-body" id="map-milan"><iframe src="https://www.openstreetmap.org/export/embed.html?bbox=9.1566%2C45.4454%2C9.2166%2C45.4954&amp;layer=mapnik" loading="lazy" title="米兰地图"></iframe><div class="map-footer">地图数据来自 OpenStreetMap</div></div></div>
+    <div class="city-header" style="background:#3A3A4A"><div class="city-header-content"><div><div class="city-label">Italy · Milano</div><h2 class="city-name">米兰</h2><p class="city-desc">意大利时尚与金融之都，哥特式建筑与现代设计的完美融合</p></div></div></div>
     <div class="mobile-cards">
-      <div class="card"><div class="card-header" style="background:#F0F0F4;border-bottom:2px solid rgba(42,42,56,0.12)"><div class="card-name">米兰大教堂</div><div class="card-name-en">Duomo di Milano</div><div class="card-tags"><span class="tag tag-reserve">推荐预约</span><span class="tag tag-warning">着装要求</span></div><a href="https://www.duomomilano.it/en/visit/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">大教堂：€7.5
-屋顶（电梯）：€17
-屋顶（楼梯）：€13</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">大教堂：9:00—19:00
-屋顶：9:00—19:00</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">每月第一个周日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">部分宗教节日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>进入大教堂须着装得体（遮肩遮膝）</span></li><li><span style="color:#f59e0b">•</span><span>屋顶天气好时可看到阿尔卑斯山</span></li><li><span style="color:#f59e0b">•</span><span>大教堂内有世界最大的彩色玻璃窗之一</span></li></ul><div class="card-notes-addr">地址：P.za del Duomo, 20122 Milano</div></div></div>
+      <div class="card"><div class="card-header" style="background:#F0F0F4;border-bottom:2px solid rgba(42,42,56,0.12)"><div class="card-name">米兰大教堂</div><div class="card-name-en">Duomo di Milano</div><div class="card-tags"><span class="tag tag-warning">着装要求</span></div><a href="https://www.duomomilano.it/en/visit/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">大教堂€7.5
+屋顶（电梯）€17 / （楼梯）€13</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">9:00—19:00</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">每月第一个周日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">部分宗教节日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>须遮肩遮膝；屋顶天气好时可看阿尔卑斯山</span></li></ul><div class="card-notes-addr">地址：P.za del Duomo, 20122 Milano</div></div></div>
 
-      <div class="card"><div class="card-header" style="background:#F0F0F4;border-bottom:2px solid rgba(42,42,56,0.12)"><div class="card-name">最后的晚餐</div><div class="card-name-en">The Last Supper (Cenacolo Vinciano)</div><div class="card-tags"><span class="tag tag-reserve">强制预约</span><span class="tag tag-info">限时参观</span></div><a href="https://www.vivaticket.com/it/biglietto/cenacolo-vinciano/2085" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人：€15（+€2预约费）
-18岁以下：€2</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周二至周日
-8:15—19:15</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">每月第一个周日
-（仍需预约，仍需预约费）</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">每周一；1月1日
-5月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>必须提前预约，通常需要提前2—3个月，旺季极难买到</span></li><li><span style="color:#f59e0b">•</span><span>每次参观限15分钟，严格控制人数（每批约30人）</span></li><li><span style="color:#f59e0b">•</span><span>参观时需保持安静，禁止使用闪光灯</span></li><li><span style="color:#f59e0b">•</span><span>达·芬奇原作绘于修道院食堂墙壁，非画布作品，极为珍贵</span></li></ul><div class="card-notes-addr">地址：Piazza Santa Maria delle Grazie, 2, 20123 Milano</div></div></div>
+      <div class="card"><div class="card-header" style="background:#F0F0F4;border-bottom:2px solid rgba(42,42,56,0.12)"><div class="card-name">最后的晚餐</div><div class="card-name-en">The Last Supper</div><div class="card-tags"><span class="tag tag-reserve">强制预约</span><span class="tag tag-info">限时15分钟</span></div><a href="https://www.vivaticket.com/it/biglietto/cenacolo-vinciano/2085" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人€15（+€2预约费）
+18岁以下€2</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周二至周日
+8:15—19:15</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">每月第一个周日（仍需预约费）</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">每周一；1月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>必须提前2—3个月预约，旺季极难买到</span></li><li><span style="color:#f59e0b">•</span><span>每次参观限15分钟，每批约30人</span></li></ul><div class="card-notes-addr">地址：Piazza Santa Maria delle Grazie, 2, 20123 Milano</div></div></div>
 
       <div class="card"><div class="card-header" style="background:#F0F0F4;border-bottom:2px solid rgba(42,42,56,0.12)"><div class="card-name">斯福尔扎城堡</div><div class="card-name-en">Castello Sforzesco</div><div class="card-tags"><span class="tag tag-free">部分免费</span></div></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">庭院：免费
-博物馆：€5（成人）
-18岁/65岁以上：免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">庭院：7:00—19:30
-博物馆：周二至周日
-10:00—17:30</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">每月第一个周日
-每天下午4:30—5:30</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">每周一（博物馆）
-1月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>城堡内有米开朗基罗最后一件雕塑《龙达尼尼的圣殇》</span></li><li><span style="color:#f59e0b">•</span><span>庭院免费开放，可自由参观</span></li><li><span style="color:#f59e0b">•</span><span>每天下午4:30后博物馆免费，是省钱好时机</span></li></ul><div class="card-notes-addr">地址：Piazza Castello, 20121 Milano</div></div></div>
+博物馆€5；18岁以下免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">庭院：7:00—19:30
+博物馆：10:00—17:30</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">每月第一个周日
+每天下午4:30—5:30</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">每周一（博物馆）</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>内有米开朗基罗最后一件雕塑《龙达尼尼的圣殇》</span></li><li><span style="color:#f59e0b">•</span><span>每天下午4:30后免费，省钱好时机</span></li></ul><div class="card-notes-addr">地址：Piazza Castello, 20121 Milano</div></div></div>
 
-      <div class="card"><div class="card-header" style="background:#F0F0F4;border-bottom:2px solid rgba(42,42,56,0.12)"><div class="card-name">布雷拉美术馆</div><div class="card-name-en">Pinacoteca di Brera</div><div class="card-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://www.brerabooking.org/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人：€15
-18岁以下：免费
-语音导览：€5</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周二至周日
-8:30—18:00</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">每月第一个周日
-每月第三个周三</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">每周一；1月1日
-5月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>意大利最重要的艺术画廊之一，拉斐尔、卡拉瓦乔等大师作品</span></li><li><span style="color:#f59e0b">•</span><span>附近的布雷拉区是米兰最美的街区之一</span></li></ul><div class="card-notes-addr">地址：Via Brera, 28, 20121 Milano</div></div></div>
+      <div class="card"><div class="card-header" style="background:#F0F0F4;border-bottom:2px solid rgba(42,42,56,0.12)"><div class="card-name">布雷拉美术馆</div><div class="card-name-en">Pinacoteca di Brera</div><div class="card-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://www.brerabooking.org/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人€15 / 18岁以下免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周二至周日
+8:30—18:00</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">每月第一个周日
+每月第三个周三</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">每周一；1月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>拉斐尔、卡拉瓦乔等大师作品</span></li></ul><div class="card-notes-addr">地址：Via Brera, 28, 20121 Milano</div></div></div>
     </div>
-    <div class="desktop-table"><div class="table-scroll"><table><thead><tr><th>🎫 景点名称</th><th>🎫 门票价格</th><th>🕐 开放时间</th><th>📅 免费日</th><th>🚫 闭馆日</th><th>详情</th></tr></thead><tbody>
-      <tr onclick="toggleTableRow('mi-1')"><td><div class="td-name">米兰大教堂</div><div class="td-name-en">Duomo di Milano</div><div class="td-tags"><span class="tag tag-reserve">推荐预约</span><span class="tag tag-warning">着装要求</span></div><a href="https://www.duomomilano.it/en/visit/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 官方订票</a></td><td><div class="td-value">大教堂：€7.5 / 屋顶（电梯）：€17 / 屋顶（楼梯）：€13</div></td><td><div class="td-value">9:00—19:00</div></td><td><div class="td-free">每月第一个周日</div></td><td><div class="td-closed">部分宗教节日</div></td><td class="td-expand">▼</td></tr>
-      <tr class="tr-notes" id="mi-1"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>进入须着装得体；屋顶天气好时可看到阿尔卑斯山</span></li></ul><div class="notes-addr">地址：P.za del Duomo, 20122 Milano</div></div></td></tr>
-      <tr onclick="toggleTableRow('mi-2')"><td><div class="td-name">最后的晚餐</div><div class="td-name-en">The Last Supper</div><div class="td-tags"><span class="tag tag-reserve">强制预约</span><span class="tag tag-info">限时参观</span></div><a href="https://www.vivaticket.com/it/biglietto/cenacolo-vinciano/2085" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 官方订票</a></td><td><div class="td-value">成人：€15（+€2预约费）
-18岁以下：€2</div></td><td><div class="td-value">周二至周日 8:15—19:15</div></td><td><div class="td-free">每月第一个周日（仍需预约费）</div></td><td><div class="td-closed">每周一；1月1日、5月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
-      <tr class="tr-notes" id="mi-2"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>必须提前2—3个月预约，旺季极难买到</span></li><li><span style="color:#f59e0b">•</span><span>每次参观限15分钟，每批约30人</span></li></ul><div class="notes-addr">地址：Piazza Santa Maria delle Grazie, 2, 20123 Milano</div></div></td></tr>
-      <tr onclick="toggleTableRow('mi-3')"><td><div class="td-name">斯福尔扎城堡</div><div class="td-name-en">Castello Sforzesco</div><div class="td-tags"><span class="tag tag-free">部分免费</span></div></td><td><div class="td-value">庭院：免费 / 博物馆：€5</div></td><td><div class="td-value">庭院 7:00—19:30 / 博物馆 10:00—17:30</div></td><td><div class="td-free">每月第一个周日 / 每天下午4:30—5:30免费</div></td><td><div class="td-closed">每周一（博物馆）；1月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
-      <tr class="tr-notes" id="mi-3"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>城堡内有米开朗基罗最后一件雕塑《龙达尼尼的圣殇》</span></li></ul><div class="notes-addr">地址：Piazza Castello, 20121 Milano</div></div></td></tr>
-      <tr onclick="toggleTableRow('mi-4')"><td><div class="td-name">布雷拉美术馆</div><div class="td-name-en">Pinacoteca di Brera</div><div class="td-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://www.brerabooking.org/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 官方订票</a></td><td><div class="td-value">成人：€15 / 18岁以下：免费</div></td><td><div class="td-value">周二至周日 8:30—18:00</div></td><td><div class="td-free">每月第一个周日 / 每月第三个周三</div></td><td><div class="td-closed">每周一；1月1日、5月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
-      <tr class="tr-notes" id="mi-4"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>意大利最重要艺术画廊之一，拉斐尔、卡拉瓦乔大师作品</span></li></ul><div class="notes-addr">地址：Via Brera, 28, 20121 Milano</div></div></td></tr>
-    </tbody></table></div><div class="table-footer">ℹ️ 点击任意行可展开查看详细注意事项</div></div>
+    <div class="desktop-table"><div class="table-scroll"><table><thead><tr><th>景点名称</th><th>门票价格</th><th>开放时间</th><th>免费日</th><th>闭馆日</th><th>详情</th></tr></thead><tbody>
+      <tr onclick="toggleTableRow('m1')"><td><div class="td-name">米兰大教堂</div><div class="td-name-en">Duomo di Milano</div><a href="https://www.duomomilano.it/en/visit/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 订票</a></td><td><div class="td-value">大教堂€7.5；屋顶电梯€17 / 楼梯€13</div></td><td><div class="td-value">9:00—19:00</div></td><td><div class="td-free">每月第一个周日</div></td><td><div class="td-closed">部分宗教节日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="m1"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>须遮肩遮膝；屋顶晴天可见阿尔卑斯山</span></li></ul></div></td></tr>
+      <tr onclick="toggleTableRow('m2')"><td><div class="td-name">最后的晚餐</div><div class="td-name-en">The Last Supper</div><div class="td-tags"><span class="tag tag-reserve">强制预约</span></div><a href="https://www.vivaticket.com/it/biglietto/cenacolo-vinciano/2085" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 订票</a></td><td><div class="td-value">成人€15+€2预约费；18岁以下€2</div></td><td><div class="td-value">周二至周日 8:15—19:15</div></td><td><div class="td-free">每月第一个周日（仍需预约费）</div></td><td><div class="td-closed">每周一；1月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="m2"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>提前2—3个月预约；每次仅限15分钟</span></li></ul></div></td></tr>
+      <tr onclick="toggleTableRow('m3')"><td><div class="td-name">斯福尔扎城堡</div><div class="td-name-en">Castello Sforzesco</div><div class="td-tags"><span class="tag tag-free">部分免费</span></div></td><td><div class="td-value">庭院：免费；博物馆€5</div></td><td><div class="td-value">庭院7:00—19:30；博物馆10:00—17:30</div></td><td><div class="td-free">每月第一个周日；每天4:30—5:30</div></td><td><div class="td-closed">每周一（博物馆）</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="m3"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>米开朗基罗《龙达尼尼的圣殇》在此</span></li></ul></div></td></tr>
+      <tr onclick="toggleTableRow('m4')"><td><div class="td-name">布雷拉美术馆</div><div class="td-name-en">Pinacoteca di Brera</div><a href="https://www.brerabooking.org/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 订票</a></td><td><div class="td-value">成人€15；18岁以下免费</div></td><td><div class="td-value">周二至周日 8:30—18:00</div></td><td><div class="td-free">每月第一个周日；每月第三个周三</div></td><td><div class="td-closed">每周一；1月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="m4"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>拉斐尔、卡拉瓦乔大师作品</span></li></ul></div></td></tr>
+    </tbody></table></div><div class="table-footer">ℹ️ 点击任意行展开注意事项</div></div>
   </section>
 
   <!-- ===== NAPLES ===== -->
   <section class="city-section" id="city-naples">
-    <div class="city-header" style="background:#C45A1A"><div class="city-header-bg" style="background:radial-gradient(circle at 20% 50%,white 0%,transparent 60%)"></div><div class="city-header-content"><div><div class="city-label">Italy · Napoli</div><h2 class="city-name">那不勒斯</h2><p class="city-desc">意大利南部最大城市，披萨发源地，维苏威火山脚下的历史宝库</p></div><div class="hidden-sm" style="text-align:right"><div class="city-count">2</div><div class="city-count-label">景点</div></div></div></div>
-    <div class="map-wrap"><button class="map-header" onclick="toggleMap('map-naples')"><span class="map-header-left"><span style="color:#C45A1A">📍</span> 那不勒斯 景点地图 <span style="font-size:0.75rem;color:#a8a29e">（2 处景点）</span></span><span id="map-naples-arrow">▼</span></button><div class="map-body" id="map-naples"><iframe src="https://www.openstreetmap.org/export/embed.html?bbox=14.2188%2C40.8158%2C14.2788%2C40.8658&amp;layer=mapnik" loading="lazy" title="那不勒斯地图"></iframe><div class="map-footer">地图数据来自 OpenStreetMap</div></div></div>
+    <div class="city-header" style="background:#C45A1A"><div class="city-header-content"><div><div class="city-label">Italy · Napoli</div><h2 class="city-name">那不勒斯</h2><p class="city-desc">意大利南部最大城市，披萨发源地，维苏威火山脚下的历史宝库</p></div></div></div>
     <div class="mobile-cards">
-      <div class="card"><div class="card-header" style="background:#FDF0E8;border-bottom:2px solid rgba(158,72,20,0.12)"><div class="card-name">庞贝古城</div><div class="card-name-en">Pompeii Archaeological Park</div><div class="card-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://pompeiisites.org/en/visiting-info/timetables-and-tickets/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">基础票：€20（成人）
-庞贝+票：€25
-欧盟18—25岁：€2
-18岁以下：免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">4月—10月：9:00—19:00
-11月—3月：9:00—17:00</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">每月第一个周日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">每周一
-12月25日、1月1日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>旺季限额20,000人，建议提前购票</span></li><li><span style="color:#f59e0b">•</span><span>场地面积大（约66公顷），建议穿舒适的鞋子，带足水</span></li><li><span style="color:#f59e0b">•</span><span>从那不勒斯乘坐环维苏威火山铁路约35分钟可达</span></li><li><span style="color:#f59e0b">•</span><span>建议租用语音导览或请导游</span></li></ul><div class="card-notes-addr">地址：Via Villa dei Misteri, 2, 80045 Pompei</div></div></div>
+      <div class="card"><div class="card-header" style="background:#FDF0E8;border-bottom:2px solid rgba(158,72,20,0.12)"><div class="card-name">庞贝古城</div><div class="card-name-en">Pompeii Archaeological Park</div><div class="card-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://pompeiisites.org/en/visiting-info/timetables-and-tickets/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">基础票€20；庞贝+票€25
+18岁以下：免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">4—10月：9:00—19:00
+11—3月：9:00—17:00</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">每月第一个周日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">每周一；12月25日、1月1日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>旺季限额20,000人，提前购票</span></li><li><span style="color:#f59e0b">•</span><span>约66公顷，穿舒适的鞋，带足水</span></li></ul><div class="card-notes-addr">地址：Via Villa dei Misteri, 2, 80045 Pompei</div></div></div>
 
-      <div class="card"><div class="card-header" style="background:#FDF0E8;border-bottom:2px solid rgba(158,72,20,0.12)"><div class="card-name">那不勒斯国家考古博物馆</div><div class="card-name-en">National Archaeological Museum of Naples</div><div class="card-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://mann-napoli.it/en/visit-us/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人：€15
-欧盟18—25岁：€2
-18岁以下：免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周三至周一
-9:00—19:30</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">每月第一个周日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">每周二；1月1日
-12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>收藏大量庞贝出土文物，与庞贝古城参观相辅相成</span></li><li><span style="color:#f59e0b">•</span><span>参观时间约2—3小时</span></li><li><span style="color:#f59e0b">•</span><span>馆内有'秘密展厅'（古罗马情色艺术），需单独申请参观</span></li></ul><div class="card-notes-addr">地址：Piazza Museo Nazionale, 19, 80135 Napoli</div></div></div>
+      <div class="card"><div class="card-header" style="background:#FDF0E8;border-bottom:2px solid rgba(158,72,20,0.12)"><div class="card-name">那不勒斯国家考古博物馆</div><div class="card-name-en">National Archaeological Museum</div><div class="card-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://mann-napoli.it/en/visit-us/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">成人€15 / 18岁以下免费</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">周三至周一
+9:00—19:30</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">每月第一个周日</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">每周二；1月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>收藏大量庞贝出土文物</span></li></ul><div class="card-notes-addr">地址：Piazza Museo Nazionale, 19, 80135 Napoli</div></div></div>
     </div>
-    <div class="desktop-table"><div class="table-scroll"><table><thead><tr><th>🎫 景点名称</th><th>🎫 门票价格</th><th>🕐 开放时间</th><th>📅 免费日</th><th>🚫 闭馆日</th><th>详情</th></tr></thead><tbody>
-      <tr onclick="toggleTableRow('na-1')"><td><div class="td-name">庞贝古城</div><div class="td-name-en">Pompeii Archaeological Park</div><div class="td-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://pompeiisites.org/en/visiting-info/timetables-and-tickets/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 官方订票</a></td><td><div class="td-value">基础票：€20 / 庞贝+票：€25 / 18岁以下：免费</div></td><td><div class="td-value">4月—10月 9:00—19:00
-11月—3月 9:00—17:00</div></td><td><div class="td-free">每月第一个周日</div></td><td><div class="td-closed">每周一；12月25日、1月1日</div></td><td class="td-expand">▼</td></tr>
-      <tr class="tr-notes" id="na-1"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>旺季限额20,000人，建议提前购票</span></li><li><span style="color:#f59e0b">•</span><span>场地约66公顷，建议穿舒适的鞋子，带足水</span></li></ul><div class="notes-addr">地址：Via Villa dei Misteri, 2, 80045 Pompei</div></div></td></tr>
-      <tr onclick="toggleTableRow('na-2')"><td><div class="td-name">那不勒斯国家考古博物馆</div><div class="td-name-en">National Archaeological Museum</div><div class="td-tags"><span class="tag tag-reserve">推荐预约</span></div><a href="https://mann-napoli.it/en/visit-us/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 官方订票</a></td><td><div class="td-value">成人：€15 / 18岁以下：免费</div></td><td><div class="td-value">周三至周一 9:00—19:30</div></td><td><div class="td-free">每月第一个周日</div></td><td><div class="td-closed">每周二；1月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
-      <tr class="tr-notes" id="na-2"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>收藏大量庞贝出土文物，与庞贝古城参观相辅相成</span></li></ul><div class="notes-addr">地址：Piazza Museo Nazionale, 19, 80135 Napoli</div></div></td></tr>
-    </tbody></table></div><div class="table-footer">ℹ️ 点击任意行可展开查看详细注意事项</div></div>
+    <div class="desktop-table"><div class="table-scroll"><table><thead><tr><th>景点名称</th><th>门票价格</th><th>开放时间</th><th>免费日</th><th>闭馆日</th><th>详情</th></tr></thead><tbody>
+      <tr onclick="toggleTableRow('n1')"><td><div class="td-name">庞贝古城</div><div class="td-name-en">Pompeii</div><a href="https://pompeiisites.org/en/visiting-info/timetables-and-tickets/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 订票</a></td><td><div class="td-value">基础€20；庞贝+€25；18岁以下免费</div></td><td><div class="td-value">4—10月 9:00—19:00；11—3月 9:00—17:00</div></td><td><div class="td-free">每月第一个周日</div></td><td><div class="td-closed">每周一；12月25日、1月1日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="n1"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>旺季限额，提前购票；约66公顷，穿舒适鞋带足水</span></li></ul></div></td></tr>
+      <tr onclick="toggleTableRow('n2')"><td><div class="td-name">那不勒斯国家考古博物馆</div><div class="td-name-en">MANN</div><a href="https://mann-napoli.it/en/visit-us/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 订票</a></td><td><div class="td-value">成人€15；18岁以下免费</div></td><td><div class="td-value">周三至周一 9:00—19:30</div></td><td><div class="td-free">每月第一个周日</div></td><td><div class="td-closed">每周二；1月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="n2"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>收藏大量庞贝出土文物，与庞贝古城相辅相成</span></li></ul></div></td></tr>
+    </tbody></table></div><div class="table-footer">ℹ️ 点击任意行展开注意事项</div></div>
   </section>
 
   <!-- ===== PISA ===== -->
   <section class="city-section" id="city-pisa">
-    <div class="city-header" style="background:#2A6B4A"><div class="city-header-bg" style="background:radial-gradient(circle at 20% 50%,white 0%,transparent 60%)"></div><div class="city-header-content"><div><div class="city-label">Italy · Pisa</div><h2 class="city-name">比萨</h2><p class="city-desc">以斜塔闻名于世的托斯卡纳古城，奇迹广场是世界最美建筑群之一</p></div><div class="hidden-sm" style="text-align:right"><div class="city-count">1</div><div class="city-count-label">景点</div></div></div></div>
-    <div class="map-wrap"><button class="map-header" onclick="toggleMap('map-pisa')"><span class="map-header-left"><span style="color:#2A6B4A">📍</span> 比萨 景点地图</span><span id="map-pisa-arrow">▼</span></button><div class="map-body" id="map-pisa"><iframe src="https://www.openstreetmap.org/export/embed.html?bbox=10.3666%2C43.7030%2C10.4266%2C43.7530&amp;layer=mapnik" loading="lazy" title="比萨地图"></iframe><div class="map-footer">地图数据来自 OpenStreetMap</div></div></div>
+    <div class="city-header" style="background:#2A6B4A"><div class="city-header-content"><div><div class="city-label">Italy · Pisa</div><h2 class="city-name">比萨</h2><p class="city-desc">以斜塔闻名于世的托斯卡纳古城，奇迹广场是世界最美建筑群之一</p></div></div></div>
     <div class="mobile-cards">
-      <div class="card"><div class="card-header" style="background:#E8F5EE;border-bottom:2px solid rgba(30,82,56,0.12)"><div class="card-name">比萨斜塔建筑群（奇迹广场）</div><div class="card-name-en">Piazza dei Miracoli (Leaning Tower of Pisa)</div><div class="card-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-info">联票</span></div><a href="https://www.opapisa.it/en/tickets/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">斜塔：€18（8岁以下禁入）
-大教堂：€3（持其他票免费）
-联票（斜塔+全部）：€35</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">斜塔：9:00—20:00（夏）
-9:00—18:00（冬）
-大教堂：10:00—19:00（夏）</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value free">大教堂持其他票免费
-每月第一个周日（部分景点）</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value closed">1月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>斜塔攀爬须提前预约，每次限30人，约35分钟</span></li><li><span style="color:#f59e0b">•</span><span>8岁以下儿童禁止攀登斜塔</span></li><li><span style="color:#f59e0b">•</span><span>斜塔有294级台阶，台阶倾斜，需注意安全</span></li><li><span style="color:#f59e0b">•</span><span>广场草坪上禁止踩踏，违者罚款</span></li></ul><div class="card-notes-addr">地址：Piazza del Duomo, 56126 Pisa</div></div></div>
+      <div class="card"><div class="card-header" style="background:#E8F5EE;border-bottom:2px solid rgba(30,82,56,0.12)"><div class="card-name">比萨斜塔建筑群（奇迹广场）</div><div class="card-name-en">Piazza dei Miracoli</div><div class="card-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-info">联票</span></div><a href="https://www.opapisa.it/en/tickets/" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">斜塔€18（8岁以下禁入）
+联票（斜塔+全部）€35</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">斜塔：9:00—20:00（夏）
+9:00—18:00（冬）</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#15803d">大教堂持其他票免费</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#dc2626">1月1日、12月25日</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>斜塔攀爬须预约，每次限30人约35分钟</span></li><li><span style="color:#f59e0b">•</span><span>8岁以下禁止攀登；广场草坪禁止踩踏</span></li></ul><div class="card-notes-addr">地址：Piazza del Duomo, 56126 Pisa</div></div></div>
     </div>
-    <div class="desktop-table"><div class="table-scroll"><table><thead><tr><th>🎫 景点名称</th><th>🎫 门票价格</th><th>🕐 开放时间</th><th>📅 免费日</th><th>🚫 闭馆日</th><th>详情</th></tr></thead><tbody>
-      <tr onclick="toggleTableRow('pi-1')"><td><div class="td-name">比萨斜塔建筑群（奇迹广场）</div><div class="td-name-en">Piazza dei Miracoli</div><div class="td-tags"><span class="tag tag-reserve">需预约</span><span class="tag tag-info">联票</span></div><a href="https://www.opapisa.it/en/tickets/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 官方订票</a></td><td><div class="td-value">斜塔：€18 / 联票（斜塔+全部）：€35</div></td><td><div class="td-value">斜塔 9:00—20:00（夏）/ 9:00—18:00（冬）</div></td><td><div class="td-free">大教堂持其他票免费；每月第一个周日</div></td><td><div class="td-closed">1月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
-      <tr class="tr-notes" id="pi-1"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>斜塔攀爬须提前预约，每次限30人，约35分钟</span></li><li><span style="color:#f59e0b">•</span><span>8岁以下儿童禁止攀登斜塔</span></li><li><span style="color:#f59e0b">•</span><span>广场草坪上禁止踩踏，违者罚款</span></li></ul><div class="notes-addr">地址：Piazza del Duomo, 56126 Pisa</div></div></td></tr>
-    </tbody></table></div><div class="table-footer">ℹ️ 点击任意行可展开查看详细注意事项</div></div>
+    <div class="desktop-table"><div class="table-scroll"><table><thead><tr><th>景点名称</th><th>门票价格</th><th>开放时间</th><th>免费日</th><th>闭馆日</th><th>详情</th></tr></thead><tbody>
+      <tr onclick="toggleTableRow('p1')"><td><div class="td-name">比萨斜塔建筑群</div><div class="td-name-en">Piazza dei Miracoli</div><a href="https://www.opapisa.it/en/tickets/" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 订票</a></td><td><div class="td-value">斜塔€18；联票€35；8岁以下禁入</div></td><td><div class="td-value">斜塔夏9:00—20:00；冬9:00—18:00</div></td><td><div class="td-free">大教堂持其他票免费</div></td><td><div class="td-closed">1月1日、12月25日</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="p1"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>需提前预约；每次限30人约35分钟；草坪禁止踩踏</span></li></ul></div></td></tr>
+    </tbody></table></div><div class="table-footer">ℹ️ 点击任意行展开注意事项</div></div>
   </section>
 
   <!-- ===== CINQUE TERRE ===== -->
   <section class="city-section" id="city-cinque-terre">
-    <div class="city-header" style="background:#1A6B8A"><div class="city-header-bg" style="background:radial-gradient(circle at 20% 50%,white 0%,transparent 60%)"></div><div class="city-header-content"><div><div class="city-label">Italy · Cinque Terre</div><h2 class="city-name">五渔村</h2><p class="city-desc">利古里亚海岸五个彩色渔村，悬崖峭壁上的世界遗产，徒步爱好者的天堂</p></div><div class="hidden-sm" style="text-align:right"><div class="city-count">1</div><div class="city-count-label">景点</div></div></div></div>
-    <div class="map-wrap"><button class="map-header" onclick="toggleMap('map-cinque')"><span class="map-header-left"><span style="color:#1A6B8A">📍</span> 五渔村 景点地图</span><span id="map-cinque-arrow">▼</span></button><div class="map-body" id="map-cinque"><iframe src="https://www.openstreetmap.org/export/embed.html?bbox=9.6139%2C44.1161%2C9.6739%2C44.1761&amp;layer=mapnik" loading="lazy" title="五渔村地图"></iframe><div class="map-footer">地图数据来自 OpenStreetMap</div></div></div>
+    <div class="city-header" style="background:#1A6B8A"><div class="city-header-content"><div><div class="city-label">Italy · Cinque Terre</div><h2 class="city-name">五渔村</h2><p class="city-desc">利古里亚海岸五个彩色渔村，悬崖峭壁上的世界遗产，徒步爱好者的天堂</p></div></div></div>
     <div class="mobile-cards">
-      <div class="card"><div class="card-header" style="background:#E8F4F8;border-bottom:2px solid rgba(19,84,112,0.12)"><div class="card-name">五渔村国家公园</div><div class="card-name-en">Cinque Terre National Park</div><div class="card-tags"><span class="tag tag-info">通票</span></div><a href="https://www.cinqueterre.eu.com/en/cinque-terre-card" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">五渔村卡（火车+步道）：
-旺季1日€18.70 / 2日€29.00
-淡季1日€14.80 / 2日€26.50
-仅步道：€7.50</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">全年开放
-（部分步道季节性关闭）</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#a8a29e">无</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#a8a29e">无（步道可能因天气关闭）</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>旺季（6—8月）游客极多，建议淡季（4—5月、9—10月）前往</span></li><li><span style="color:#f59e0b">•</span><span>步道难度各异，需穿专业徒步鞋，不建议穿凉鞋</span></li><li><span style="color:#f59e0b">•</span><span>部分步道（如2号步道Via dell'Amore）需额外预约</span></li><li><span style="color:#f59e0b">•</span><span>五个村庄：蒙泰罗索、韦尔纳扎、科尔尼利亚、马纳罗拉、里奥马焦雷</span></li><li><span style="color:#f59e0b">•</span><span>火车是村庄间最便捷的交通方式</span></li></ul><div class="card-notes-addr">地址：La Spezia省，利古里亚大区</div></div></div>
+      <div class="card"><div class="card-header" style="background:#E8F4F8;border-bottom:2px solid rgba(19,84,112,0.12)"><div class="card-name">五渔村国家公园</div><div class="card-name-en">Cinque Terre National Park</div><div class="card-tags"><span class="tag tag-info">通票</span></div><a href="https://www.cinqueterre.eu.com/en/cinque-terre-card" target="_blank" class="card-book-btn">↗ 官方订票</a></div><div class="card-grid"><div class="card-cell"><div class="card-cell-label">🎫 门票</div><div class="card-cell-value">旺季1日€18.70 / 2日€29
+淡季1日€14.80
+仅步道€7.50</div></div><div class="card-cell"><div class="card-cell-label">🕐 开放时间</div><div class="card-cell-value">全年开放
+（部分步道季节性关闭）</div></div><div class="card-cell"><div class="card-cell-label">📅 免费日</div><div class="card-cell-value" style="color:#a8a29e">无</div></div><div class="card-cell"><div class="card-cell-label">🚫 闭馆日</div><div class="card-cell-value" style="color:#a8a29e">无（步道可能因天气关闭）</div></div></div><button class="card-toggle" onclick="toggleNotes(this)">⚠️ 查看注意事项 ▼</button><div class="card-notes"><ul><li><span style="color:#f59e0b">•</span><span>旺季（6—8月）游客极多，建议4—5月或9—10月</span></li><li><span style="color:#f59e0b">•</span><span>步道须穿专业徒步鞋；五村间火车最便捷</span></li></ul><div class="card-notes-addr">地址：La Spezia省，利古里亚大区</div></div></div>
     </div>
-    <div class="desktop-table"><div class="table-scroll"><table><thead><tr><th>🎫 景点名称</th><th>🎫 门票价格</th><th>🕐 开放时间</th><th>📅 免费日</th><th>🚫 闭馆日</th><th>详情</th></tr></thead><tbody>
-      <tr onclick="toggleTableRow('ct-1')"><td><div class="td-name">五渔村国家公园</div><div class="td-name-en">Cinque Terre National Park</div><div class="td-tags"><span class="tag tag-info">通票</span></div><a href="https://www.cinqueterre.eu.com/en/cinque-terre-card" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 官方订票</a></td><td><div class="td-value">旺季1日€18.70 / 2日€29.00
-淡季1日€14.80 / 仅步道€7.50</div></td><td><div class="td-value">全年开放（部分步道季节性关闭）</div></td><td><div class="td-free-none">无</div></td><td><div class="td-closed" style="color:#a8a29e">无（步道可能因天气关闭）</div></td><td class="td-expand">▼</td></tr>
-      <tr class="tr-notes" id="ct-1"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>旺季游客极多，建议淡季前往</span></li><li><span style="color:#f59e0b">•</span><span>步道需穿专业徒步鞋</span></li><li><span style="color:#f59e0b">•</span><span>火车是村庄间最便捷交通</span></li></ul><div class="notes-addr">地址：La Spezia省，利古里亚大区</div></div></td></tr>
-    </tbody></table></div><div class="table-footer">ℹ️ 点击任意行可展开查看详细注意事项</div></div>
+    <div class="desktop-table"><div class="table-scroll"><table><thead><tr><th>景点名称</th><th>门票价格</th><th>开放时间</th><th>免费日</th><th>闭馆日</th><th>详情</th></tr></thead><tbody>
+      <tr onclick="toggleTableRow('ct1')"><td><div class="td-name">五渔村国家公园</div><div class="td-name-en">Cinque Terre National Park</div><a href="https://www.cinqueterre.eu.com/en/cinque-terre-card" target="_blank" onclick="event.stopPropagation()" class="td-book-btn">↗ 订票</a></td><td><div class="td-value">旺季1日€18.70；淡季€14.80；仅步道€7.50</div></td><td><div class="td-value">全年开放</div></td><td><div class="td-free-none">无</div></td><td><div class="td-closed" style="color:#a8a29e">无</div></td><td class="td-expand">▼</td></tr>
+      <tr class="tr-notes" id="ct1"><td colspan="6"><div class="notes-box"><div class="notes-header">⚠️ 注意事项</div><ul class="notes-list"><li><span style="color:#f59e0b">•</span><span>建议淡季4—5月或9—10月前往；穿专业徒步鞋</span></li></ul></div></td></tr>
+    </tbody></table></div><div class="table-footer">ℹ️ 点击任意行展开注意事项</div></div>
   </section>
-
-  </div><!-- /cities-container -->
 
   <!-- Travel Tips -->
   <section class="tips-section">
@@ -877,209 +457,80 @@ footer{border-top:1px solid #e7e5e4;background:#1c1a16;color:#a8a29e;padding:2.5
     <div class="tips-row">
       <div class="tips-card">
         <div class="tips-card-title">🚫 法定节假日</div>
-        <p style="font-size:0.75rem;color:#78716c;margin-bottom:0.75rem">以下日期景点可能关闭或缩短开放时间，出行前请查官网确认。</p>
         <div class="holiday-grid">
-          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">1月1日</span><span class="holiday-name">元旦</span></div>
-          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">1月6日</span><span class="holiday-name">主显节</span></div>
-          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">复活节（浮动）</span><span class="holiday-name">复活节</span></div>
-          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">4月25日</span><span class="holiday-name">解放日</span></div>
-          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">5月1日</span><span class="holiday-name">劳动节</span></div>
-          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">6月2日</span><span class="holiday-name">共和国日</span></div>
-          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">8月15日</span><span class="holiday-name">圣母升天节</span></div>
-          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">11月1日</span><span class="holiday-name">万圣节</span></div>
-          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">12月8日</span><span class="holiday-name">圣母无染原罪节</span></div>
-          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">12月25日</span><span class="holiday-name">圣诞节</span></div>
-          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">12月26日</span><span class="holiday-name">圣斯蒂芬节</span></div>
+          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">1月1日</span><span class="holiday-name"> 元旦</span></div>
+          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">4月25日</span><span class="holiday-name"> 解放日</span></div>
+          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">5月1日</span><span class="holiday-name"> 劳动节</span></div>
+          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">6月2日</span><span class="holiday-name"> 共和国日</span></div>
+          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">8月15日</span><span class="holiday-name"> 圣母升天</span></div>
+          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">11月1日</span><span class="holiday-name"> 万圣节</span></div>
+          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">12月8日</span><span class="holiday-name"> 圣母节</span></div>
+          <div class="holiday-item"><span class="holiday-dot"></span><span class="holiday-date">12月25日</span><span class="holiday-name"> 圣诞节</span></div>
         </div>
       </div>
       <div class="tips-card">
         <div class="tips-card-title">📖 预约时间建议</div>
-        <p style="font-size:0.75rem;color:#78716c;margin-bottom:0.75rem">以下景点门票极为紧俏，务必提前预约。</p>
-        <div class="booking-tip"><span class="booking-tip-name">梵蒂冈博物馆</span><span class="booking-tip-val">提前1-2月</span></div>
         <div class="booking-tip"><span class="booking-tip-name">最后的晚餐（米兰）</span><span class="booking-tip-val">提前2—3个月</span></div>
+        <div class="booking-tip"><span class="booking-tip-name">梵蒂冈博物馆</span><span class="booking-tip-val">提前1—2月</span></div>
         <div class="booking-tip"><span class="booking-tip-name">乌菲兹美术馆</span><span class="booking-tip-val">提前1—2月</span></div>
         <div class="booking-tip"><span class="booking-tip-name">斗兽场</span><span class="booking-tip-val">提前1月</span></div>
         <div class="booking-tip"><span class="booking-tip-name">佛罗伦萨大教堂穹顶</span><span class="booking-tip-val">提前1—2月</span></div>
-        <div class="booking-tip"><span class="booking-tip-name">比萨斜塔</span><span class="booking-tip-val">提前1—2天</span></div>
-        <div class="booking-tip"><span class="booking-tip-name">学院美术馆（佛罗伦萨）</span><span class="booking-tip-val">提前3—5天</span></div>
+        <div class="booking-tip"><span class="booking-tip-name">博尔盖塞美术馆</span><span class="booking-tip-val">提前1—2月</span></div>
       </div>
     </div>
     <div class="tips-row">
-      <div class="tips-card free-sunday-card">
-        <div class="tips-card-title">📅 博物馆周日（每月第一个周日）</div>
-        <p style="font-size:0.75rem;color:#166534;line-height:1.6;margin-bottom:0.5rem">每月第一个周日，意大利文化部主办的国家博物馆、美术馆、考古遗址免费开放。适用景点包括斗兽场、古罗马广场、万神殿（部分）、圣天使堡、乌菲兹美术馆、学院美术馆、庞贝古城等。</p>
-        <p style="font-size:0.75rem;color:#15803d;font-weight:500">⚠️ 免费日人流极大，部分景点仍需提前预约（可能收取预约费）。</p>
+      <div class="tips-card" style="background:#f0fdf4;border-color:#bbf7d0">
+        <div class="tips-card-title" style="color:#15803d">📅 博物馆日（每月第一个周日）</div>
+        <p style="font-size:0.75rem;color:#166534;line-height:1.6">每月第一个周日，意大利国家博物馆、美术馆、考古遗址免费开放。适用景点包括斗兽场、乌菲兹美术馆、庞贝古城等。<br><strong>⚠️ 免费日人流极大，部分景点仍需预约。</strong></p>
       </div>
-      <div class="tips-card dress-card">
-        <div class="tips-card-title">👗 教堂着装规范</div>
-        <p style="font-size:0.75rem;color:#78350f;line-height:1.6;margin-bottom:0.5rem">进入所有教堂（含圣彼得大教堂、圣马可大教堂、佛罗伦萨大教堂等）须<strong>遮肩遮膝</strong>。</p>
-        <ul style="font-size:0.75rem;color:#78350f;list-style:none">
-          <li style="margin-bottom:0.25rem">• 可在入口处借用或购买披肩/围巾</li>
-          <li style="margin-bottom:0.25rem">• 违规者将被拒绝入内，无法退票</li>
-          <li>• 梵蒂冈西斯廷教堂额外禁止短裤、无袖上衣</li>
-        </ul>
-      </div>
-    </div>
-    <div class="tips-row">
-      <div class="tips-card">
-        <div class="tips-card-title">🎫 城市通票</div>
-        <div class="pass-item"><strong>罗马通票（Roma Pass）</strong>48小时€32 / 72小时€52，含2—3处博物馆免费入场 + 无限次公共交通。</div>
-        <div class="pass-item"><strong>佛罗伦萨博物馆联票</strong>学院美术馆+巴杰罗博物馆48小时联票€26，官方渠道购买。</div>
-        <div class="pass-item"><strong>威尼斯MUVE博物馆通票</strong>含圣马可广场博物馆群，成人€30，性价比高。</div>
-        <div class="pass-item"><strong>比萨奇迹广场联票</strong>斜塔+全部景点联票€35，比单独购票节省约€10。</div>
-      </div>
-      <div class="tips-card">
-        <div class="tips-card-title">💶 货币与支付</div>
-        <div class="currency-item"><span class="currency-dot">•</span><span><strong>货币：</strong>欧元（€），1€≈7.8人民币（2026年参考汇率）</span></div>
-        <div class="currency-item"><span class="currency-dot">•</span><span><strong>刷卡：</strong>绝大多数景点、餐厅支持Visa/Mastercard，建议备用现金€50—100</span></div>
-        <div class="currency-item"><span class="currency-dot">•</span><span><strong>支付宝/微信：</strong>部分景点支持，但覆盖率有限</span></div>
-        <div class="currency-item"><span class="currency-dot">•</span><span><strong>取现：</strong>建议使用银联卡在ATM取现，手续费约1—2%</span></div>
-        <div class="currency-item"><span class="currency-dot">•</span><span><strong>小费：</strong>非强制，餐厅可留€1—2</span></div>
+      <div class="tips-card" style="background:#fffbeb;border-color:#fde68a">
+        <div class="tips-card-title" style="color:#92400e">👗 教堂着装规范</div>
+        <p style="font-size:0.75rem;color:#78350f;line-height:1.6">进入所有教堂须<strong>遮肩遮膝</strong>。可在入口借用披肩，违规者将被拒绝入内，无法退票。梵蒂冈西斯廷教堂额外禁止短裤、无袖上衣。</p>
       </div>
     </div>
     <div class="tips-row">
       <div class="tips-card">
         <div class="tips-card-title">🕐 最佳旅行季节</div>
-        <div class="season-item season-best"><strong style="color:#15803d">🌸 最佳：4—5月 / 9—10月</strong><br>气候温和（18—25°C），人流相对少，景色优美，花费适中。强烈推荐。</div>
-        <div class="season-item season-peak"><strong style="color:#d97706">☀️ 旺季：6—8月</strong><br>气温高（30—38°C），人流极大，票价上涨，需提前数月预约热门景点。</div>
-        <div class="season-item season-off"><strong style="color:#2563eb">❄️ 淡季：11—3月</strong><br>人少价低，部分景点缩短开放时间，威尼斯可能遭遇高潮水（Acqua Alta）。</div>
+        <div class="season-item season-best"><strong style="color:#15803d">🌸 最佳：4—5月 / 9—10月</strong><br>气候温和（18—25°C），人流较少，强烈推荐。</div>
+        <div class="season-item season-peak"><strong style="color:#d97706">☀️ 旺季：6—8月</strong><br>气温高（30—38°C），人流极大，需提前数月预约。</div>
+        <div class="season-item season-off"><strong style="color:#2563eb">❄️ 淡季：11—3月</strong><br>人少价低，部分景点缩短开放时间。</div>
       </div>
       <div class="tips-card">
-        <div class="tips-card-title">⭐ 购票渠道优先级</div>
-        <div class="priority-item priority-green"><span class="priority-num">①</span><span><strong>官方网站</strong>：最便宜、最可靠，本页所有"官方订票"按钮均指向官方渠道</span></div>
+        <div class="tips-card-title">⭐ 购票渠道建议</div>
+        <div class="priority-item priority-green"><span class="priority-num">①</span><span><strong>官方网站</strong>：最便宜最可靠，页面所有"官方订票"均指向官方渠道</span></div>
         <div class="priority-item priority-blue"><span class="priority-num">②</span><span><strong>官方授权平台</strong>：Vivaticket、CoopCulture、B-Ticket等</span></div>
-        <div class="priority-item priority-amber"><span class="priority-num">③</span><span><strong>第三方平台</strong>：Tiqets、GetYourGuide等，价格偏高但有时官网售罄时仍有票</span></div>
-        <div class="priority-item priority-red"><span class="priority-num">✗</span><span><strong>避免</strong>：景点门口黄牛票、仿冒官网（域名相似但价格高出数倍）</span></div>
+        <div class="priority-item priority-amber"><span class="priority-num">③</span><span><strong>第三方平台</strong>：Tiqets、GetYourGuide，价格偏高但官网售罄时可选</span></div>
+        <div class="priority-item priority-red"><span class="priority-num">✗</span><span><strong>避免</strong>：景点门口黄牛票、仿冒官网</span></div>
       </div>
     </div>
   </section>
 
 </main>
 
-<!-- Footer -->
 <footer>
   <div class="footer-inner">
     <div>
       <div class="footer-title">意大利热门景点攻略</div>
-      <p class="footer-desc">数据来源：各景点官方网站及权威旅游资源，更新至2025—2026年。票价与时间可能随季节调整，出行前请以官方网站为准。</p>
+      <p class="footer-desc">数据来源：各景点官方网站，更新至2025—2026年。票价与时间可能随季节调整，出行前请以官方网站为准。</p>
     </div>
-    <div class="footer-meta">
-      <div>数据更新：2025—2026</div>
-      <div style="margin-top:0.25rem">涵盖 7 座城市 · 25 处景点</div>
-    </div>
+    <div class="footer-meta">数据更新：2025—2026 · 涵盖 7 座城市 · 25 处景点</div>
   </div>
 </footer>
 
-<!-- Scroll to top -->
 <button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="返回顶部">▲</button>
 
 <script>
-// ========== QR Popover ==========
-function toggleQR(btn) {
-  var popover = document.getElementById('qr-popover');
-  var rect = btn.getBoundingClientRect();
-  if (popover.classList.contains('open')) {
-    popover.classList.remove('open');
-    return;
-  }
-  popover.style.bottom = (window.innerHeight - rect.top + 12) + 'px';
-  popover.style.right = (window.innerWidth - rect.right) + 'px';
-  popover.classList.add('open');
-}
-document.addEventListener('click', function(e) {
-  if (!e.target.closest('#wx-btn')) {
-    document.getElementById('qr-popover').classList.remove('open');
-  }
-});
-
-
-// ========== Card Notes Toggle ==========
-function toggleNotes(btn) {
-  var notes = btn.nextElementSibling;
-  var isOpen = notes.classList.contains('open');
-  notes.classList.toggle('open');
-  btn.textContent = isOpen ? '⚠️ 查看注意事项 ▼' : '⚠️ 收起注意事项 ▲';
-}
-
-// ========== Table Row Toggle ==========
-function toggleTableRow(id) {
-  var row = document.getElementById(id);
-  var prevRow = row.previousElementSibling;
-  var isOpen = row.classList.contains('open');
-  row.classList.toggle('open');
-  var expandCell = prevRow.querySelector('.td-expand');
-  if (expandCell) expandCell.textContent = isOpen ? '▼' : '▲';
-}
-
-// ========== City Navigation ==========
-function scrollToCity(cityId) {
-  var el = document.getElementById('city-' + cityId);
-  if (el) el.scrollIntoView({behavior:'smooth', block:'start'});
-}
-
-// ========== Active City on Scroll ==========
-var cities = ['rome','florence','venice','milan','naples','pisa','cinque-terre'];
-var cityColors = {
-  rome:'#C4622D', florence:'#8B6914', venice:'#1B4B8A',
-  milan:'#3A3A4A', naples:'#C45A1A', pisa:'#2A6B4A', 'cinque-terre':'#1A6B8A'
-};
-function updateActiveCity() {
-  var active = '';
-  for (var i = cities.length - 1; i >= 0; i--) {
-    var el = document.getElementById('city-' + cities[i]);
-    if (el && el.getBoundingClientRect().top <= 100) {
-      active = cities[i];
-      break;
-    }
-  }
-  document.querySelectorAll('.city-tab').forEach(function(tab) {
-    var c = tab.dataset.city;
-    if (c === active) {
-      tab.style.background = cityColors[c];
-      tab.style.color = '#fff';
-    } else {
-      tab.style.background = '#f5f5f0';
-      tab.style.color = '#57534e';
-    }
-  });
-}
-
-// ========== Scroll Top ==========
-var scrollTopBtn = document.getElementById('scroll-top');
-window.addEventListener('scroll', function() {
-  scrollTopBtn.classList.toggle('show', window.scrollY > 600);
-  updateActiveCity();
-}, {passive:true});
-
-// ========== Search ==========
-function filterAttractions(q) {
-  q = q.trim().toLowerCase();
-  var sections = document.querySelectorAll('.city-section');
-  if (!q) {
-    sections.forEach(function(s) { s.style.display = ''; });
-    document.getElementById('no-results') && (document.getElementById('no-results').style.display = 'none');
-    return;
-  }
-  var found = false;
-  sections.forEach(function(section) {
-    var text = section.textContent.toLowerCase();
-    if (text.includes(q)) {
-      section.style.display = '';
-      found = true;
-    } else {
-      section.style.display = 'none';
-    }
-  });
-  var noRes = document.getElementById('no-results');
-  if (noRes) noRes.style.display = found ? 'none' : 'block';
-}
+function toggleQR(btn){var p=document.getElementById('qr-popover');var r=btn.getBoundingClientRect();if(p.classList.contains('open')){p.classList.remove('open');return;}p.style.bottom=(window.innerHeight-r.top+12)+'px';p.style.right=(window.innerWidth-r.right)+'px';p.classList.add('open');}
+document.addEventListener('click',function(e){if(!e.target.closest('#wx-btn'))document.getElementById('qr-popover').classList.remove('open');});
+function toggleNotes(btn){var n=btn.nextElementSibling;n.classList.toggle('open');btn.textContent=n.classList.contains('open')?'⚠️ 收起注意事项 ▲':'⚠️ 查看注意事项 ▼';}
+function toggleTableRow(id){var r=document.getElementById(id);var p=r.previousElementSibling;r.classList.toggle('open');var e=p.querySelector('.td-expand');if(e)e.textContent=r.classList.contains('open')?'▲':'▼';}
+function scrollToCity(id){var el=document.getElementById('city-'+id);if(el)el.scrollIntoView({behavior:'smooth',block:'start'});}
+var cityColors={rome:'#C4622D',florence:'#8B6914',venice:'#1B4B8A',milan:'#3A3A4A',naples:'#C45A1A',pisa:'#2A6B4A','cinque-terre':'#1A6B8A'};
+var cities=['rome','florence','venice','milan','naples','pisa','cinque-terre'];
+function updateActive(){var a='';for(var i=cities.length-1;i>=0;i--){var el=document.getElementById('city-'+cities[i]);if(el&&el.getBoundingClientRect().top<=100){a=cities[i];break;}}document.querySelectorAll('.city-tab').forEach(function(t){var c=t.dataset.city;t.style.background=c===a?cityColors[c]:'#f5f5f0';t.style.color=c===a?'#fff':'#57534e';});}
+var sb=document.getElementById('scroll-top');
+window.addEventListener('scroll',function(){sb.classList.toggle('show',window.scrollY>600);updateActive();},{passive:true});
+function filterAttractions(q){q=q.trim().toLowerCase();document.querySelectorAll('.city-section').forEach(function(s){s.style.display=!q||s.textContent.toLowerCase().includes(q)?'':'none';});}
 </script>
-
-<div id="no-results" class="no-results" style="display:none">
-  <div class="icon">🔍</div>
-  <p>未找到匹配的景点</p>
-  <p style="font-size:0.875rem;margin-top:0.25rem">请尝试其他关键词</p>
-</div>
-
 </body>
 </html>
