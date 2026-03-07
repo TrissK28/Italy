@@ -84,15 +84,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .city-count{color:rgba(255,255,255,0.4);font-family:Georgia,serif;font-size:5rem;font-weight:700;line-height:1}
 .city-count-label{color:rgba(255,255,255,0.6);font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase}
 
-/* Map */
-.map-wrap{border-radius:0.75rem;border:1px solid #e7e5e4;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.06);margin-bottom:1.5rem}
-.map-header{width:100%;display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1.25rem;background:#f9f9f7;border-bottom:1px solid #e7e5e4;cursor:pointer}
-.map-header-left{display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;font-weight:600;color:#44403c}
-.map-body{display:none}
-.map-body.open{display:block}
-.map-body iframe{width:100%;height:360px;border:none;display:block}
-@media(min-width:768px){.map-body iframe{height:440px}}
-.map-footer{padding:0.5rem 1rem;background:#f9f9f7;border-top:1px solid #e7e5e4;font-size:0.75rem;color:#a8a29e;text-align:center}
+
 
 /* Tags */
 .tag{display:inline-block;padding:0.125rem 0.5rem;border-radius:0.25rem;font-size:0.75rem;font-weight:500}
@@ -230,7 +222,7 @@ footer{border-top:1px solid #e7e5e4;background:#1c1a16;color:#a8a29e;padding:2.5
 
 <!-- Hero -->
 <div class="hero">
-  <img src="/images/hero.webp" alt="意大利风景" loading="eager">
+  <img src="images/hero.webp" alt="意大利风景" loading="eager">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-label">Travel Guide · 2026</div>
@@ -280,7 +272,7 @@ footer{border-top:1px solid #e7e5e4;background:#1c1a16;color:#a8a29e;padding:2.5
         📖 <span>公众号：</span><span class="wx-btn-label">Triss 攻略集</span>
         <div class="qr-popover" id="qr-popover">
           <div class="qr-card">
-            <img src="/images/qrcode.jpg" alt="Triss 攻略集 公众号二维码">
+            <img src="images/qrcode.jpg" alt="Triss 攻略集 公众号二维码">
             <p>扫码关注<br><strong>Triss 攻略集</strong></p>
           </div>
         </div>
@@ -320,18 +312,6 @@ footer{border-top:1px solid #e7e5e4;background:#1c1a16;color:#a8a29e;padding:2.5
           <div class="city-count">7</div>
           <div class="city-count-label">景点</div>
         </div>
-      </div>
-    </div>
-
-    <!-- Map -->
-    <div class="map-wrap">
-      <button class="map-header" onclick="toggleMap('map-rome')">
-        <span class="map-header-left"><span style="color:#C4622D">📍</span> 罗马 景点地图 &amp; 行程规划 <span style="font-size:0.75rem;color:#a8a29e">（7 处景点）</span></span>
-        <span id="map-rome-arrow">▼</span>
-      </button>
-      <div class="map-body" id="map-rome">
-        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=12.4322%2C41.8702%2C12.5122%2C41.9302&amp;layer=mapnik" loading="lazy" title="罗马地图"></iframe>
-        <div class="map-footer">地图数据来自 OpenStreetMap · 点击景点名可在地图中定位</div>
       </div>
     </div>
 
@@ -1012,13 +992,6 @@ document.addEventListener('click', function(e) {
   }
 });
 
-// ========== Map Toggle ==========
-function toggleMap(id) {
-  var body = document.getElementById(id);
-  var arrow = document.getElementById(id + '-arrow');
-  body.classList.toggle('open');
-  arrow.textContent = body.classList.contains('open') ? '▲' : '▼';
-}
 
 // ========== Card Notes Toggle ==========
 function toggleNotes(btn) {
